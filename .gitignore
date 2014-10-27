@@ -26,3 +26,7 @@
 *.exe
 *.out
 *.app
+
+*.xcscheme
+
+Jump_Game_II/Jump_Game_II.xcodeproj/xcuserdata/pingxian.liang.xcuserdatad/xcschemes/xcschememanagement.plist
