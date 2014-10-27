@@ -29,6 +29,54 @@ using namespace std;
 //    }
 //};
 
+///如果是0的话，保留三个0.
+void fliterDup(vector<int>& old)
+{
+    int NumOfSavedZero=0;
+    
+    map<int,bool> _map;
+       cout<<"\n"<<endl;
+    auto beg = old.begin();
+    for ( auto end = old.end() -1 ;  0 < 1  ; end--)
+    {
+        int value = *end;
+        if (_map.find(value) == _map.end())
+        {
+            // not found
+            _map[value] = true;
+            
+            //cout<<value<<",";
+        }
+        else
+        {
+            //found
+            if (value == 0)
+            {
+                NumOfSavedZero ++;
+                if (NumOfSavedZero > 2 ) {
+                    old.erase(end);
+                }
+            }
+            else
+            {
+                old.erase(end);
+            }
+        }
+        
+        
+        if (end == beg) {
+            break;
+        }
+    }
+    
+    
+    //cout<<"\n"<<endl;
+}
+
+
+
+
+
 
 vector<int> sortThree(int a,int b,int c)
 {
@@ -59,8 +107,9 @@ vector<int> sortThree(int a,int b,int c)
 
 struct pos_num2
 {
-    int pos,pos2;
+    int pos;
     int num;
+    int pos2;
     int num2;
     bool marked;
     pos_num2()
@@ -74,16 +123,18 @@ struct pos_num2
     }
 };
 
-vector<vector<int> > threeSum(vector<int> &num) {
-
-    
-    
+vector<vector<int> > threeSum(vector<int> &num)
+{
     map<int,pos_num2> _map;
     
-    
-    
     vector<vector<int>> result;
-    
+    if (num.size() <=2) {
+        return result;
+    }
+    if (num.size() > 3) {
+        fliterDup(num);
+    }
+
     auto begin = num.begin();
     auto end = num.end();
    
@@ -98,7 +149,7 @@ vector<vector<int> > threeSum(vector<int> &num) {
             if ( finded != _map.end())
             {
                 pos_num2 pn = finded->second;
-                if (  pn.marked == false && pn.pos != pos2 && pn.pos2 != pos2)
+                if (  pn.marked == false && pn.pos != pos2 && pn.pos2 != pos2 )
                 {
                     result.push_back( sortThree(pn.num, pn.num2, value2 ) );
                     
@@ -106,8 +157,6 @@ vector<vector<int> > threeSum(vector<int> &num) {
                     
                     _map[value2] = pn; //mark it's added.
                 }
-                
-                
             }
             else
             {
@@ -117,13 +166,20 @@ vector<vector<int> > threeSum(vector<int> &num) {
                 pos_num2 pn(value,value2,pos,pos2);
                 
                 int index = 0 - value - value2;
+                
+                auto finded2 = _map.find(index);
+                
                 _map[index]=pn;
+    
             }
             
         }
         
         
     }
+    
+   
+
     
     
     
@@ -134,17 +190,35 @@ vector<vector<int> > threeSum(vector<int> &num) {
 
 int main(int argc, const char * argv[])
 {
+//    vector<int> test( { } );
+   
+ //    vector<int> test( {0,0,0 } );
+     vector<int> test( {0,0,0,0 } );
   //  vector<int> test( {-1 ,0 ,1, 2, -1 ,-4} );
     //vector<int> test( { -40 , 32 , 20} );
     //vector<int> test( { -40 , 8 , 0 , -8 , -8,32 , 20} );
-    vector<int> test( { -20 , -20 , -20 , -20 , 40 , 40} );
+    //vector<int> test( { -20 , -20 , -190 , 150 ,  40} );
     
-    threeSum( test );
+    auto result = threeSum( test );
+    cout<<"result:\n"<<endl;
+    for (auto begin2 = result.begin(); begin2!= result.end(); begin2++) {
+        vector<int> v = * begin2;
+        cout<<v[0]<<","<<v[1]<<","<<v[2]<<endl;
+    }
+    
+    
     
     
     vector<int> test2( {7,-1,14,-12,-8,7,2,-15,8,8,-8,-14,-4,-5,7,9,11,-4,-15,-6,1,-14,4,3,10,-5,2,1,6,11,2,-2,-5,-7,-6,2,-15,11,-6,8,-4,2,1,-1,4,-6,-15,1,5,-15,10,14,9,-8,-6,4,-6,11,12,-15,7,-1,-9,9,-1,0,-4,-1,-12,-2,14,-9,7,0,-3,-4,1,-2,12,14,-10,0,5,14,-1,14,3,8,10,-8,8,-5,-2,6,-11,12,13,-7,-12,8,6,-13,14,-2,-5,-11,1,3,-6});
     
-    threeSum( test2 );
+    result = threeSum( test2 );
+    
+    cout<<"result:\n"<<endl;
+    for (auto begin2 = result.begin(); begin2!= result.end(); begin2++) {
+        vector<int> v = * begin2;
+        cout<<v[0]<<","<<v[1]<<","<<v[2]<<endl;
+    }
+    
     
     return 0;
 }
