@@ -29,22 +29,31 @@
 using namespace std;
 
 
-bool next(string s,int *divide , int currDivide)
-{
-    
-    
-    
-}
+//bool next(string s,int *divide , int currDivide)
+//{
+//    
+//    
+//    
+//}
 
 ///partNum [0~x]
-bool isValid(string s,int len1,len2,len3,len4,int partNum)
+bool isValid(string s,int len1,int len2,int len3,int len4,int partNum)
 {
+    if (!(len1 >= 0 && len1 <= 3))
+        return false;
+    if (!(len2 >= 0 && len2 <= 3))
+        return false;
+    if (!(len3 >= 0 && len3 <= 3))
+        return false;
+    if (!(len4 >= 0 && len4 <= 3))
+        return false;
+    
+    
     int *parts=new int[4];
     parts[0]=len1;
     parts[1]=len2;
     parts[2]=len3;
     parts[3]=len4;
-    
     
     
     int begins=0;
@@ -56,100 +65,120 @@ bool isValid(string s,int len1,len2,len3,len4,int partNum)
     
     int ends=begins+parts[i];
     
-    string tmp = s
+    string tmp = s.substr(begins,ends-begins);
     
-    
-    
-    
-}
-
-int part1(string s,int len1,int len2,int len3,int len4,int left)
-{
-    for (int i = 1; i < left && len1 < 3; i++)
-    {
-        part2(s,len1+i,len2,len3,len4,left-i);
+    //第一个不能为0,如025
+    if (tmp.length() > 1 && tmp[0] == '0'   ) {
+        return false;
     }
     
+    int result = -1;
+    result = atoi(tmp.c_str());
+    
+    
+    return result >= 0 && result <= 255;
 }
 
-int part2(string s,int len1,int len2,int len3,int len4,int left)
+
+void printIPAddress(string s, int len1,int len2,int len3,int len4 ,vector<string> &result)
 {
-    for (int i = 0; i < left && len2 < 3; i++)
+    string strResult;
+    for (int i = 0; i < len1+len2+len3+len4; i++)
     {
-        part3(s,len1,len2+i,len3,len4,left-i);
-    }
-    
-}
-
-int part3(string s,int len1,int len2,int len3,int len4,int left)
-{
-    for (int i = 0; i < left && len3 < 3; i++)
-    {
-        part4(s,len1,len2,len3+i,len4,left-i);
-    }
-    
-}
-
-void printIPAddress(string s, int len1,len2,len3,len4)
-{
-    
-}
-
-int part4(string s,int len1,int len2,int len3,int len4,int left)
-{
-    printIPAddress(s,len1,len2,len3,len4+left);
-}
-
-
-
-
-void aaa(string s, int left , int *partLen)
-{
-    if (left == 0)
-        return;
-    
-    int partLen2=new int[4];
-    memcpy(partLen2, partLen, sizeof(int)*3);
-    
-    
-    int spendOne ;
-    for (int i=0; i < 4; i++)
-    {
-        spendOne = i;
+        if (i == len1)
+        {
+            strResult.append(".");
+            cout<<".";
+        }
+         if (i == len1+len2)
+         {
+            strResult.append(".");
+            cout<<".";
+         }
+         if (i == len1+len2+len3)
+         {
+            strResult.append(".");
+             cout<<".";
+         }
         
-        partLen2[i]+=1;
         
-        aaa(s,left-1,partLen);
+        strResult.append(&s[i],1);
+        cout<<s[i];
     }
+    
+    cout<<endl;
+    
+    result.push_back(strResult);
+}
+
+
+
+void part4(string s,int len1,int len2,int len3,int len4,int left,vector<string> &result)
+{
+        if(isValid(s,len1,len2,len3,len4+left,3))
+    printIPAddress(s,len1,len2,len3,len4+left,result);
+}
+
+
+void part3(string s,int len1,int len2,int len3,int len4,int left,vector<string> &result)
+{
+    for (int i = 0; i <= left && len3 < 3; i++)
+    {
+        if(isValid(s,len1,len2,len3+i,len4,2))
+        part4(s,len1,len2,len3+i,len4,left-i,result);
+    }
+    
+}
+
+
+void part2(string s,int len1,int len2,int len3,int len4,int left,vector<string> &result)
+{
+    for (int i = 0; i <= left && len2 < 3; i++)
+    {
+        if(isValid(s,len1,len2+i,len3,len4,1))
+        part3(s,len1,len2+i,len3,len4,left-i,result);
+    }
+    
+}
+
+
+
+void part1(string s,int len1,int len2,int len3,int len4,int left,vector<string> &result)
+{
+    for (int i = 0; i <=left && len1 < 3; i++)
+    {
+        if(isValid(s,len1+i,len2,len3,len4,0))
+            part2(s,len1+i,len2,len3,len4,left-i,result);
+    }
+    
 }
 
 
 vector<string> restoreIpAddresses(string s)
 {
-    int partPos[4]={1,2,3,4};
-    
-    int partLen[4]={1,1,1,1};
-    
     int len = s.length();
     
-    int len2= 3*4 - len;
-    
-    //unsigned long ipaddr = atol(s.c_str());
     int left = len -4;
     
-    aaa(s,left,partLen);
+    vector<string> result;
     
+    part1(s, 1, 1, 1, 1, left,result);
     
-    
-    
-    
-    next(s,divide,0);
+    return  result;
 }
 
 
 
 int main(int argc, const char * argv[])
 {
+//    restoreIpAddresses("25525511135");
+//    restoreIpAddresses("0000");
+   
+    
+    restoreIpAddresses("010010");
+    //Expected: ["0.10.0.10","0.100.1.0"]
+    
+    
     
     return 0;
 }
