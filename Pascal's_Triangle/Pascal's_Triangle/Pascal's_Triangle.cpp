@@ -83,10 +83,61 @@ vector<vector<int> > generate(int numRows)
 }
 
 
+/**
+ Pascal's Triangle II
+ 
+ Given an index k, return the kth row of the Pascal's triangle.
+ 
+ For example, given k = 3,
+ Return [1,3,3,1].
+ 
+ Note:
+ Could you optimize your algorithm to use only O(k) extra space?
+ */
+
+vector<int> getRow(int rowIndex)
+{
+    if (rowIndex == 0)
+        return vector<int>();
+    
+    int r[100];
+    int a[100];
+    
+    //int *r = new int[rowIndex+1]; //r(n)
+    //int *a = new int[rowIndex+1]; //r(n-1)
+    
+    //row 0
+    //r[0]=1;
+    a[0]=1;
+    
+    for (int currRow = 1; currRow <= rowIndex; currRow++)
+    {
+        int itemsInRow = currRow + 1;
+        r[0]=1;
+        r[itemsInRow-1]=1;
+        for (int i = 1; i < itemsInRow -1 ; i++)
+        {
+            r[i]=a[i-1]+a[i];
+        }
+        
+        memcpy( a, r, sizeof(r[0]) * itemsInRow);
+    }
+    
+
+    
+    vector<int> result( r, r+rowIndex+1);
+    return  result;
+}
+
 int main(int argc, const char * argv[])
 {
     auto result = generate( 2 );
     
+    
+    auto r = getRow(3);
+    r =getRow(4);
+    r =getRow(5);
+    r =getRow(6);
     
     return 0;
 }
