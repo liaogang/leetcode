@@ -40,17 +40,42 @@ struct TreeNode
 };
 
 
-void walkoverChild(TreeNode *n)
+bool walkoverChild(TreeNode *n,int treeValueSum,int sum)
 {
+    if (treeValueSum == sum)
+        return true;
     
+    if (n->left)
+    {
+        if(walkoverChild(n->left, treeValueSum+n->left->val, sum))
+            return true;
+    }
+    
+    if (n->right)
+    {
+        if( walkoverChild(n->right, treeValueSum+n->right->val, sum))
+            return true;
+    }
+    
+    return false;
 }
 
 bool hasPathSum(TreeNode *root, int sum)
 {
+    if (root==NULL)
+        return false;
     
+    return walkoverChild(root,root->val,sum);
 }
 
 int main(int argc, const char * argv[])
 {
+    TreeNode root(2);
+    TreeNode r2(1);
+    
+    root.left=&r2;
+    
+    std::cout<<hasPathSum(&root, 1)<<std::endl;
+    
     return 0;
 }

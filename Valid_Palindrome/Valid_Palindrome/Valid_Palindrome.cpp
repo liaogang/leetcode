@@ -31,9 +31,7 @@ using namespace std;
 ///是否是数字或文字
 bool isAlphanumeric(char c)
 {
-    return (c >= '0' && c <= '9' ) ||
-           (c >= 'a' && c <= 'z' ) ||
-           (c >= 'A' && c <= 'Z' ) ;
+    return isalnum((unsigned char)c);
 }
 
 
