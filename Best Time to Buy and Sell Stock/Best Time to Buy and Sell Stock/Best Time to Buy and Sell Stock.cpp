@@ -151,79 +151,100 @@ void test2()
 int maxProfit3(vector<int> &prices)
 {
     int len = prices.size();
-    if (len == 0 || len == 1)
+    if (len <= 1)
         return 0;
-    
-    bool haveStones = false;
-    
-    int profitMostLarge = 0;
-    int profitSeconeLarge = 0;
-    
-    int currPrice=prices[0];
-    int stonesPrice = currPrice;
-    for (int i = 1; i <= len; i++)
+    else if(len == 2)
     {
-        int nextPrice ;
-        
-        if (i == len )
-            nextPrice = 0;
+        if (prices[0] < prices[1])
+            return prices[1]-prices[0];
         else
-            nextPrice = prices[i];
-        
-        cout<<"curr price"<<currPrice<<endl;
-        
-        if (haveStones)
-        {
-            /// sell stones at top.
-            if (nextPrice<currPrice)
-            {
-                int profit = currPrice - stonesPrice;
-                if (profit > profitMostLarge)
-                {
-                    if(profitMostLarge>0)
-                        profitSeconeLarge = profitMostLarge;
-                    
-                    profitMostLarge = profit;
-                    cout<<"profit: "<<profit<<endl;
-                }
-                else if(profit > profitSeconeLarge)
-                {
-                    profitSeconeLarge = profit;
-                    cout<<"profit: "<<profit<<endl;
-                }
-                //else
-                    //cout<<"~~~sell at price: "<<currPrice<<endl;
-                
-                haveStones = false;
-            }
-        }
-        else
-        {
-            /// buy stones at bottom.
-            if (nextPrice > currPrice)
-            {
-                stonesPrice = currPrice;
-                cout<<"buy a price: "<<currPrice<<endl;
-                haveStones = true;
-            }
-            
-        }
-        
-        
-        ///
-        currPrice = nextPrice;
+            return 0;
     }
     
-    cout<<"~~~~~~~~~"<<endl<<profitMostLarge<<","<<profitSeconeLarge<<endl;
+    int minPos = 0 ;
+    int maxPos ;
+    int min = prices[0];
+    int max =0;
+    int maxProfit=0;
+    for (int i = 0; i < len; i++)
+    {
+        int p = prices[i];
+        cout<<p<<endl;
+        if (p<min)
+        {
+            minPos = i;
+            min = p;
+            max = 0;
+        }
+        
+        if (p > max)
+        {
+            max = p;
+            
+            if (max - min > maxProfit)
+            {
+                maxProfit = max - min;
+                maxPos = i;
+            }
+        }
+    }
     
-    return profitMostLarge+profitSeconeLarge;
+    
+    
+    int maxProfitSecond=0;
+    min = prices[0];
+    max =0;
+
+    ///second time.
+    ///from 0~ minPos , from maxPos+1 ~ Len.
+    for (int i = 0; ( 0 <= i  && i < minPos ) || (maxPos < i && i < len); i++)
+    {
+        int p = prices[i];
+        cout<<p<<endl;
+        
+        if (i == maxPos + 1)
+        {
+            min = p;
+            max = p;
+        }
+        
+        
+        if (p<min)
+        {
+            min = p;
+            max = 0;
+        }
+        
+        if (p > max)
+        {
+            max = p;
+            
+            if (max - min > maxProfitSecond)
+            {
+                maxProfitSecond = max - min;
+            }
+        }
+        
+        
+        if (i == minPos -1)
+        {
+            i = maxPos ;
+        }
+    }
+    
+    
+    
+    
+    cout<<"profit1: "<< maxProfit<<", profit2: "<<maxProfitSecond<<endl;
+    
+    return maxProfit + maxProfitSecond;
 }
 
 
 void test3()
 {
-    vector<int> test({1,2,8,6,100,20,0,1000});
-    //    vector<int> test({1,2});
+//    vector<int> test({1,2,8,6,100,20,0,1000});
+    vector<int> test({1,2,4});
     cout<<maxProfit3(test)<<endl;
 }
 
