@@ -53,7 +53,7 @@ struct TreeNode
 const int flagEmpty = -203984;
 TreeNode * generateTree(vector<int> a)
 {
-    int len = a.size();
+    int len = (int) a.size();
     if (len==0)
         return NULL;
     

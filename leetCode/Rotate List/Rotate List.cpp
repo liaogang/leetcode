@@ -30,46 +30,33 @@ public:
             return head;
         
         
-        int count ;
+        ListNode *end = head;
+        ListNode *last = nullptr;
+        /// get count
+        int count =0;
+        for (; end != NULL; end=end->next,count++)
+            last = end;
         
-        /// head ~~ end : head2 ~~ end2.
-        ///       f             k
-        /// after rotate.
-        /// head2 ~~ end2 : head ~~ end.
-        
-        ListNode *end2 = head;
-        ListNode *last;
-        int i = 0;
-        for (; end2 != NULL; end2=end2->next,i++)
-            last = end2;
-        
-        end2 = last;
-        count = i;
-        
-        if (k == count || count == 1)
+        end = last;
+       
+        if(count == 1)
             return head;
         
+        k = k % count;
+        if (k == count )
+            return head;
         
-        while (k-- > 0)
-        {
-                
+        ///
+        end->next=head;
+        k = count - k;
+        while (k-- > 0) {
+            last = head;
+            head=head->next;
         }
         
+        last->next=nullptr;
         
-        
-        int f = count - k;
-        ListNode *end = head;
-        int n = f;
-        for (; end != NULL && n > 0; end=end->next,n--);
-        
-        ListNode *head2=end->next;
-        
-        
-        
-        end2->next = head;
-        end->next = nullptr;
-        
-        return head2;
+        return head;
     }
 };
 
