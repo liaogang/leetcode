@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1EFFB6C01A510B9100ECDB7E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1EFFB6BF1A510B9100ECDB7E /* main.cpp */; };
 		1EFFB6CD1A510BB100ECDB7E /* Insert Interval.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1EFFB6CC1A510BB100ECDB7E /* Insert Interval.cpp */; };
+		1EFFB6E31A514A1B00ECDB7E /* Remove Element.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1EFFB6E21A514A1B00ECDB7E /* Remove Element.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -30,13 +30,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		1EFFB6DE1A514A1B00ECDB7E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		1EFFB6BC1A510B9100ECDB7E /* leetCode */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = leetCode; sourceTree = BUILT_PRODUCTS_DIR; };
-		1EFFB6BF1A510B9100ECDB7E /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		1EFFB6CA1A510BB100ECDB7E /* Insert Interval */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Insert Interval"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EFFB6CC1A510BB100ECDB7E /* Insert Interval.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Insert Interval.cpp"; sourceTree = "<group>"; };
+		1EFFB6E01A514A1B00ECDB7E /* Remove Element */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Remove Element"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1EFFB6E21A514A1B00ECDB7E /* Remove Element.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Remove Element.cpp"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +64,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1EFFB6DD1A514A1B00ECDB7E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		1EFFB6B31A510B9100ECDB7E = {
 			isa = PBXGroup;
 			children = (
-				1EFFB6BE1A510B9100ECDB7E /* leetCode */,
 				1EFFB6CB1A510BB100ECDB7E /* Insert Interval */,
+				1EFFB6E11A514A1B00ECDB7E /* Remove Element */,
 				1EFFB6BD1A510B9100ECDB7E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -71,16 +88,9 @@
 			children = (
 				1EFFB6BC1A510B9100ECDB7E /* leetCode */,
 				1EFFB6CA1A510BB100ECDB7E /* Insert Interval */,
+				1EFFB6E01A514A1B00ECDB7E /* Remove Element */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		1EFFB6BE1A510B9100ECDB7E /* leetCode */ = {
-			isa = PBXGroup;
-			children = (
-				1EFFB6BF1A510B9100ECDB7E /* main.cpp */,
-			);
-			path = leetCode;
 			sourceTree = "<group>";
 		};
 		1EFFB6CB1A510BB100ECDB7E /* Insert Interval */ = {
@@ -89,6 +99,14 @@
 				1EFFB6CC1A510BB100ECDB7E /* Insert Interval.cpp */,
 			);
 			path = "Insert Interval";
+			sourceTree = "<group>";
+		};
+		1EFFB6E11A514A1B00ECDB7E /* Remove Element */ = {
+			isa = PBXGroup;
+			children = (
+				1EFFB6E21A514A1B00ECDB7E /* Remove Element.cpp */,
+			);
+			path = "Remove Element";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,6 +146,23 @@
 			productReference = 1EFFB6CA1A510BB100ECDB7E /* Insert Interval */;
 			productType = "com.apple.product-type.tool";
 		};
+		1EFFB6DF1A514A1B00ECDB7E /* Remove Element */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1EFFB6E41A514A1B00ECDB7E /* Build configuration list for PBXNativeTarget "Remove Element" */;
+			buildPhases = (
+				1EFFB6DC1A514A1B00ECDB7E /* Sources */,
+				1EFFB6DD1A514A1B00ECDB7E /* Frameworks */,
+				1EFFB6DE1A514A1B00ECDB7E /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Remove Element";
+			productName = "Remove Element";
+			productReference = 1EFFB6E01A514A1B00ECDB7E /* Remove Element */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -141,6 +176,9 @@
 						CreatedOnToolsVersion = 6.1;
 					};
 					1EFFB6C91A510BB100ECDB7E = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					1EFFB6DF1A514A1B00ECDB7E = {
 						CreatedOnToolsVersion = 6.1;
 					};
 				};
@@ -159,6 +197,7 @@
 			targets = (
 				1EFFB6BB1A510B9100ECDB7E /* leetCode */,
 				1EFFB6C91A510BB100ECDB7E /* Insert Interval */,
+				1EFFB6DF1A514A1B00ECDB7E /* Remove Element */,
 			);
 		};
 /* End PBXProject section */
@@ -168,7 +207,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1EFFB6C01A510B9100ECDB7E /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,6 +215,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				1EFFB6CD1A510BB100ECDB7E /* Insert Interval.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1EFFB6DC1A514A1B00ECDB7E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1EFFB6E31A514A1B00ECDB7E /* Remove Element.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,6 +335,24 @@
 			};
 			name = Release;
 		};
+		1EFFB6E51A514A1B00ECDB7E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1EFFB6E61A514A1B00ECDB7E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -314,6 +378,14 @@
 			buildConfigurations = (
 				1EFFB6CF1A510BB100ECDB7E /* Debug */,
 				1EFFB6D01A510BB100ECDB7E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1EFFB6E41A514A1B00ECDB7E /* Build configuration list for PBXNativeTarget "Remove Element" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1EFFB6E51A514A1B00ECDB7E /* Debug */,
+				1EFFB6E61A514A1B00ECDB7E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
