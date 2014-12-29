@@ -17,22 +17,14 @@
     The order of elements can be changed. It doesn't matter what you leave beyond the new length.
  */
 
-int removeElement(int A[], int n, int elem)
+int removeElement(int A[], int newLen, int elem)
 {
-    int newLen = n;
     int start = -1;
     
-    for (int i =0; i <= newLen ; i++)
+    int i =0;
+    for (; i < newLen ; i++)
     {
-        int val = A[i];
-        bool bEnd = false;
-        if (i == newLen )
-        {
-            val = elem - 1;
-            bEnd = true;
-        }
-        
-        if (val == elem)
+        if (A[i] == elem)
         {
             if (start == -1)
                 start = i;
@@ -43,19 +35,26 @@ int removeElement(int A[], int n, int elem)
             {
                 int eLen = i - start;
                 
-                // delete [start,end)
+                // move from [i,array end] to  [start,i -1 ]
                 memmove( A + start, A + i, (newLen -1 - start) * sizeof(int));
                 
                 newLen -= eLen;
-                
-                if ( bEnd )
-                    break;
-                
                 i -= eLen;
                 start = -1;
             }
         }
     }
+    
+    
+    if (start != -1)
+    {
+        int eLen = i - start;
+        
+        memmove( A + start, A + i, (newLen -1 - start) * sizeof(int));
+        
+        newLen -= eLen;
+    }
+    
     
     return newLen;
 }

@@ -133,3 +133,25 @@ void printfIntervals(vector<Interval> &itvs)
 }
 
 
+int getCount(ListNode *head)
+{
+    int i = 0;
+    for (; head != NULL; head=head->next,i++);
+    return i;
+}
+
+ListNode *moveNext(ListNode *head , int n)
+{
+    for (; head != NULL && n > 0; head=head->next,n--);
+    
+    return head;
+}
+
+
+void printList(ListNode *head)
+{
+    printf("print list: %p:\n",head);
+    for (; head != NULL; head=head->next)
+        printf("%d\n",head->val);
+    printf("print list end\n",head);
+}

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1EFFB6CD1A510BB100ECDB7E /* Insert Interval.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1EFFB6CC1A510BB100ECDB7E /* Insert Interval.cpp */; };
 		1EFFB6E31A514A1B00ECDB7E /* Remove Element.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1EFFB6E21A514A1B00ECDB7E /* Remove Element.cpp */; };
+		1EFFB6EE1A515ECE00ECDB7E /* Rotate List.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1EFFB6ED1A515ECE00ECDB7E /* Rotate List.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -39,6 +40,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		1EFFB6E91A515ECE00ECDB7E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +57,8 @@
 		1EFFB6CC1A510BB100ECDB7E /* Insert Interval.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Insert Interval.cpp"; sourceTree = "<group>"; };
 		1EFFB6E01A514A1B00ECDB7E /* Remove Element */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Remove Element"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EFFB6E21A514A1B00ECDB7E /* Remove Element.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Remove Element.cpp"; sourceTree = "<group>"; };
+		1EFFB6EB1A515ECE00ECDB7E /* Rotate List */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Rotate List"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1EFFB6ED1A515ECE00ECDB7E /* Rotate List.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Rotate List.cpp"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +83,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1EFFB6E81A515ECE00ECDB7E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -79,6 +98,7 @@
 			children = (
 				1EFFB6CB1A510BB100ECDB7E /* Insert Interval */,
 				1EFFB6E11A514A1B00ECDB7E /* Remove Element */,
+				1EFFB6EC1A515ECE00ECDB7E /* Rotate List */,
 				1EFFB6BD1A510B9100ECDB7E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -89,6 +109,7 @@
 				1EFFB6BC1A510B9100ECDB7E /* leetCode */,
 				1EFFB6CA1A510BB100ECDB7E /* Insert Interval */,
 				1EFFB6E01A514A1B00ECDB7E /* Remove Element */,
+				1EFFB6EB1A515ECE00ECDB7E /* Rotate List */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -107,6 +128,14 @@
 				1EFFB6E21A514A1B00ECDB7E /* Remove Element.cpp */,
 			);
 			path = "Remove Element";
+			sourceTree = "<group>";
+		};
+		1EFFB6EC1A515ECE00ECDB7E /* Rotate List */ = {
+			isa = PBXGroup;
+			children = (
+				1EFFB6ED1A515ECE00ECDB7E /* Rotate List.cpp */,
+			);
+			path = "Rotate List";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,6 +192,23 @@
 			productReference = 1EFFB6E01A514A1B00ECDB7E /* Remove Element */;
 			productType = "com.apple.product-type.tool";
 		};
+		1EFFB6EA1A515ECE00ECDB7E /* Rotate List */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1EFFB6EF1A515ECE00ECDB7E /* Build configuration list for PBXNativeTarget "Rotate List" */;
+			buildPhases = (
+				1EFFB6E71A515ECE00ECDB7E /* Sources */,
+				1EFFB6E81A515ECE00ECDB7E /* Frameworks */,
+				1EFFB6E91A515ECE00ECDB7E /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Rotate List";
+			productName = "Rotate List";
+			productReference = 1EFFB6EB1A515ECE00ECDB7E /* Rotate List */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -179,6 +225,9 @@
 						CreatedOnToolsVersion = 6.1;
 					};
 					1EFFB6DF1A514A1B00ECDB7E = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					1EFFB6EA1A515ECE00ECDB7E = {
 						CreatedOnToolsVersion = 6.1;
 					};
 				};
@@ -198,6 +247,7 @@
 				1EFFB6BB1A510B9100ECDB7E /* leetCode */,
 				1EFFB6C91A510BB100ECDB7E /* Insert Interval */,
 				1EFFB6DF1A514A1B00ECDB7E /* Remove Element */,
+				1EFFB6EA1A515ECE00ECDB7E /* Rotate List */,
 			);
 		};
 /* End PBXProject section */
@@ -223,6 +273,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				1EFFB6E31A514A1B00ECDB7E /* Remove Element.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1EFFB6E71A515ECE00ECDB7E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1EFFB6EE1A515ECE00ECDB7E /* Rotate List.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -353,6 +411,24 @@
 			};
 			name = Release;
 		};
+		1EFFB6F01A515ECE00ECDB7E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1EFFB6F11A515ECE00ECDB7E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -386,6 +462,14 @@
 			buildConfigurations = (
 				1EFFB6E51A514A1B00ECDB7E /* Debug */,
 				1EFFB6E61A514A1B00ECDB7E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1EFFB6EF1A515ECE00ECDB7E /* Build configuration list for PBXNativeTarget "Rotate List" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1EFFB6F01A515ECE00ECDB7E /* Debug */,
+				1EFFB6F11A515ECE00ECDB7E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
