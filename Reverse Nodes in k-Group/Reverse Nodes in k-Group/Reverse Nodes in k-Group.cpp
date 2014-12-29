@@ -29,20 +29,7 @@
 
 #include <assert.h>
 
-/// Definition for singly-linked list.
-struct ListNode
-{
-    int val;
-    ListNode *next;
-    ListNode(int x) : val(x), next(NULL) {}
-    
-    ListNode* addNode(int value)
-    {
-        ListNode *n=new ListNode(value);
-        this->next=n;
-        return n;
-    }
-};
+#include "../../leetcode.h"
 
 
 ///return reversed head

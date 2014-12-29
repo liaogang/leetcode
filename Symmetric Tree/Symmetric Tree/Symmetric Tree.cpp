@@ -53,85 +53,9 @@
 using namespace std;
 
 
-/// Definition for binary tree
-struct TreeNode
-{
-    int val;
-    TreeNode *left;
-    TreeNode *right;
-    TreeNode(int x) : val(x), left(NULL), right(NULL) {}
-};
+#include "../../leetcode.h"
 
 
-const int flagEmpty = -203984;
-TreeNode * generateTree(vector<int> a)
-{
-    int len = a.size();
-    if (len==0)
-        return NULL;
-    
-    cout<<"len:"<<len<<endl;
-    
-    unsigned int len2=len;
-    
-    TreeNode **nodes = new TreeNode*[len];
-    for (int i =0; i < len; i++)
-    {
-        TreeNode *n = NULL;
-        if (a[i] != flagEmpty)
-        {
-            n =new TreeNode(a[i]);
-        }
-        
-        nodes[i]=n;
-        cout<<i<<","<<a[i]<<endl;
-    }
-    
-    
-    int cSum = 1;
-    int louNumber = 1;
-    int lou = 1;
-    len2>>=1;
-    
-    while (len2)
-    {
-        int currLouNumber = 2 * louNumber;
-        cout<<endl<<"-----------curr lou:"<<lou<<"-----------"<<currLouNumber<<endl;
-        
-        
-        for (int i = cSum ,j = cSum - louNumber ; i < cSum + currLouNumber && i < len && j < cSum ; i+=2 , j++)
-        {
-            TreeNode *left = nodes[i] ;
-            TreeNode *right = nodes[i + 1];
-            
-            while (j < cSum)
-            {
-                if (nodes[j])
-                {
-                    cout<<"set parent"<< i  << " ," << i + 1<< "-->"<< j<< endl;
-                    nodes[j]->left=left;
-                    nodes[j]->right=right;
-                    break;
-                }
-                j++;
-            }
-            
-        }
-        
-        
-        //move next
-        louNumber=currLouNumber;
-        cSum += louNumber;
-        cout<<"total"<<cSum<<endl;
-        len2>>=1;
-        lou++;
-    }
-    
-    
-    
-    
-    return nodes[0];
-}
 
 
 ///result: Memory Limit Exceeded

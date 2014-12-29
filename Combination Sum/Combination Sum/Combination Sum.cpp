@@ -29,10 +29,33 @@
  */
 
 #include <vector>
+
 using namespace std;
-class Solution {
+
+/**
+    prime: 质数，素数,对于集合C对言
+    Non prime:非质数
+ */
+
+void fliterPrime(vector<int> &candidates)
+{
+    
+    
+    
+    
+}
+
+
+class Solution
+{
 public:
-    vector<vector<int> > combinationSum(vector<int> &candidates, int target) {
+    vector<vector<int> > combinationSum(vector<int> &candidates, int target)
+    {
+        sort(candidates.begin(), candidates.end() );
+        
+        
+        
+        
         
     }
 };
