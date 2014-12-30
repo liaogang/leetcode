@@ -1,21 +1,20 @@
 //
 //  main.cpp
-//  Combination Sum
+//  Combination Sum II
 //
-//  Created by liaogang on 14/12/5.
-//  Copyright (c) 2014年 gang.liao. All rights reserved.
+//  Created by liaogang on 14/12/30.
+//  Copyright (c) 2014年 liaogang. All rights reserved.
 //
 
 #include <iostream>
 #include "../../leetcode.h"
 
 /**
-    Combination Sum
+    Combination Sum II
  
+ Given a collection of candidate numbers (C) and a target number (T), find all unique combinations in C where the candidate numbers sums to T.
  
- Given a set of candidate numbers (C) and a target number (T), find all unique combinations in C where the candidate numbers sums to T.
- 
- The same repeated number may be chosen from C unlimited number of times.
+ Each number in C may only be used once in the combination.
  
  Note:
  
@@ -23,24 +22,19 @@
  Elements in a combination (a1, a2, … , ak) must be in non-descending order. (ie, a1 ≤ a2 ≤ … ≤ ak).
  The solution set must not contain duplicate combinations.
  
- For example, given candidate set 2,3,6,7 and target 7,
+ For example, given candidate set 10,1,2,7,6,1,5 and target 8,
  A solution set is:
- [7]
- [2, 2, 3]
- 
+ [1, 7]
+ [1, 2, 5]
+ [2, 6]
+ [1, 1, 6]
  */
-
-#include <vector>
-
-using namespace std;
-
-
-
 
 /// find the value is no larger than A[start] , and is no larger than sum ,till sum is zero.
 void dfs( vector<int> &A , int start , int sum , vector<vector<int>>  &output ,vector<int> &result)
 {
     int len = (int) A.size();
+    
     
     for (; start < len ; start++)
     {
@@ -59,25 +53,22 @@ void dfs( vector<int> &A , int start , int sum , vector<vector<int>>  &output ,v
             vector<int> result2 = result;
             result2.push_back(val);
             
-            dfs(A, start, sum_val , output ,result2);
+            dfs(A, start + 1, sum_val , output ,result2);
         }
         else
             break;
+        
+        while (A[start+1] == val)
+            start++;
     }
     
 }
 
 
-
-
-
-
-
-
 class Solution
 {
 public:
-    vector<vector<int> > combinationSum(vector<int> &candidates, int target)
+    vector<vector<int> > combinationSum2(vector<int> &candidates, int target)
     {
         sort(candidates.begin(), candidates.end() );
         
@@ -92,14 +83,16 @@ public:
     }
 };
 
+
 int main(int argc, const char * argv[])
 {
-    vector<int> test({2,3,6,7});
-    int target = 7;
+    vector<int> test({10,1,2,7,6,1,5});
+    int target = 8;
     
     Solution s;
     
-    s.combinationSum(test, target);
+    s.combinationSum2(test, target);
     
     return 0;
 }
+

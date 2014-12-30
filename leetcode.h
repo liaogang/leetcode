@@ -155,3 +155,19 @@ void printList(ListNode *head)
         printf("%d\n",head->val);
     printf("print list end\n",head);
 }
+
+void printVecVec(vector<vector<int> > &A)
+{
+    printf("~~~~~~~size: %d~~~~~~>>>\n",A.size());
+    for (auto i = A.begin(); i != A.end(); i++)
+    {
+        vector<int> row = *i;
+        for (auto j = row.begin(); j != row.end(); j++) {
+            int k = *j;
+            printf("%d  ",k);
+        }
+        
+        printf("\n");
+    }
+    printf("\n<<<~~~~~~~~~~~~~\n");
+}

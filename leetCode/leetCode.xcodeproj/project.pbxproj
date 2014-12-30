@@ -7,12 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E29724F1A526507001FE76F /* Combination Sum II.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1E29724E1A526507001FE76F /* Combination Sum II.cpp */; };
 		1EFFB6CD1A510BB100ECDB7E /* Insert Interval.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1EFFB6CC1A510BB100ECDB7E /* Insert Interval.cpp */; };
 		1EFFB6E31A514A1B00ECDB7E /* Remove Element.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1EFFB6E21A514A1B00ECDB7E /* Remove Element.cpp */; };
 		1EFFB6EE1A515ECE00ECDB7E /* Rotate List.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1EFFB6ED1A515ECE00ECDB7E /* Rotate List.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		1E29724A1A526506001FE76F /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 		1EFFB6BA1A510B9100ECDB7E /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -52,6 +62,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1E29724C1A526506001FE76F /* Combination Sum II */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Combination Sum II"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E29724E1A526507001FE76F /* Combination Sum II.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Combination Sum II.cpp"; sourceTree = "<group>"; };
 		1EFFB6BC1A510B9100ECDB7E /* leetCode */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = leetCode; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EFFB6CA1A510BB100ECDB7E /* Insert Interval */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Insert Interval"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EFFB6CC1A510BB100ECDB7E /* Insert Interval.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Insert Interval.cpp"; sourceTree = "<group>"; };
@@ -62,6 +74,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		1E2972491A526506001FE76F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1EFFB6B91A510B9100ECDB7E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -93,12 +112,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1E29724D1A526506001FE76F /* Combination Sum II */ = {
+			isa = PBXGroup;
+			children = (
+				1E29724E1A526507001FE76F /* Combination Sum II.cpp */,
+			);
+			path = "Combination Sum II";
+			sourceTree = "<group>";
+		};
 		1EFFB6B31A510B9100ECDB7E = {
 			isa = PBXGroup;
 			children = (
 				1EFFB6CB1A510BB100ECDB7E /* Insert Interval */,
 				1EFFB6E11A514A1B00ECDB7E /* Remove Element */,
 				1EFFB6EC1A515ECE00ECDB7E /* Rotate List */,
+				1E29724D1A526506001FE76F /* Combination Sum II */,
 				1EFFB6BD1A510B9100ECDB7E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -110,6 +138,7 @@
 				1EFFB6CA1A510BB100ECDB7E /* Insert Interval */,
 				1EFFB6E01A514A1B00ECDB7E /* Remove Element */,
 				1EFFB6EB1A515ECE00ECDB7E /* Rotate List */,
+				1E29724C1A526506001FE76F /* Combination Sum II */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -141,6 +170,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		1E29724B1A526506001FE76F /* Combination Sum II */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1E2972521A526507001FE76F /* Build configuration list for PBXNativeTarget "Combination Sum II" */;
+			buildPhases = (
+				1E2972481A526506001FE76F /* Sources */,
+				1E2972491A526506001FE76F /* Frameworks */,
+				1E29724A1A526506001FE76F /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Combination Sum II";
+			productName = "Combination Sum II";
+			productReference = 1E29724C1A526506001FE76F /* Combination Sum II */;
+			productType = "com.apple.product-type.tool";
+		};
 		1EFFB6BB1A510B9100ECDB7E /* leetCode */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1EFFB6C31A510B9100ECDB7E /* Build configuration list for PBXNativeTarget "leetCode" */;
@@ -218,6 +264,9 @@
 				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = liaogang;
 				TargetAttributes = {
+					1E29724B1A526506001FE76F = {
+						CreatedOnToolsVersion = 6.1;
+					};
 					1EFFB6BB1A510B9100ECDB7E = {
 						CreatedOnToolsVersion = 6.1;
 					};
@@ -248,11 +297,20 @@
 				1EFFB6C91A510BB100ECDB7E /* Insert Interval */,
 				1EFFB6DF1A514A1B00ECDB7E /* Remove Element */,
 				1EFFB6EA1A515ECE00ECDB7E /* Rotate List */,
+				1E29724B1A526506001FE76F /* Combination Sum II */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		1E2972481A526506001FE76F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E29724F1A526507001FE76F /* Combination Sum II.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1EFFB6B81A510B9100ECDB7E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -287,6 +345,24 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		1E2972501A526507001FE76F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1E2972511A526507001FE76F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		1EFFB6C11A510B9100ECDB7E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -432,6 +508,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		1E2972521A526507001FE76F /* Build configuration list for PBXNativeTarget "Combination Sum II" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E2972501A526507001FE76F /* Debug */,
+				1E2972511A526507001FE76F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		1EFFB6B71A510B9100ECDB7E /* Build configuration list for PBXProject "leetCode" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -448,6 +532,7 @@
 				1EFFB6C51A510B9100ECDB7E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1EFFB6CE1A510BB100ECDB7E /* Build configuration list for PBXNativeTarget "Insert Interval" */ = {
 			isa = XCConfigurationList;
@@ -456,6 +541,7 @@
 				1EFFB6D01A510BB100ECDB7E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1EFFB6E41A514A1B00ECDB7E /* Build configuration list for PBXNativeTarget "Remove Element" */ = {
 			isa = XCConfigurationList;
@@ -464,6 +550,7 @@
 				1EFFB6E61A514A1B00ECDB7E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1EFFB6EF1A515ECE00ECDB7E /* Build configuration list for PBXNativeTarget "Rotate List" */ = {
 			isa = XCConfigurationList;
@@ -472,6 +559,7 @@
 				1EFFB6F11A515ECE00ECDB7E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
