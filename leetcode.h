@@ -156,12 +156,23 @@ void printList(ListNode *head)
     printf("print list end\n",head);
 }
 
+template<class T>
+void printContainer(T c)
+{
+    for ( auto a : c)
+        cout<<a<<endl;
+}
+
 void printVecVec(vector<vector<int> > &A)
 {
     printf("~~~~~~~size: %d~~~~~~>>>\n",A.size());
     for (auto i = A.begin(); i != A.end(); i++)
     {
         vector<int> row = *i;
+        
+        printContainer(row);
+        //printContainer(row);
+        
         for (auto j = row.begin(); j != row.end(); j++) {
             int k = *j;
             printf("%d  ",k);
@@ -171,3 +182,9 @@ void printVecVec(vector<vector<int> > &A)
     }
     printf("\n<<<~~~~~~~~~~~~~\n");
 }
+
+
+typedef vector<int> MatrixRow;
+typedef vector<MatrixRow> Matrix;
+
+

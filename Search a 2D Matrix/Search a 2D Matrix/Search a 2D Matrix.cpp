@@ -31,8 +31,7 @@
 #include <vector>
 using namespace std;
 
-typedef vector<int> MatrixRow;
-typedef vector<MatrixRow> Matrix;
+#include "../../leetcode.h"
 
 
 bool searchMatrixRow(MatrixRow &row,int target)
