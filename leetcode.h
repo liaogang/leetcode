@@ -188,3 +188,24 @@ typedef vector<int> MatrixRow;
 typedef vector<MatrixRow> Matrix;
 
 
+
+/// Definition for a point.
+struct Point
+{
+    int x;
+    int y;
+    Point() : x(0), y(0) {}
+    Point(int a, int b) : x(a), y(b) {}
+};
+
+
+
+struct Line
+{
+    Point a;
+    Point b;
+    Line();
+    Line(Point aa, Point bb):a(aa),b(bb){}
+};
+
+
