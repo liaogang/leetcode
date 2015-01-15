@@ -10,6 +10,9 @@
 		1E21DA9C1A539CD30047F243 /* Merge Intervals.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1E21DA9B1A539CD30047F243 /* Merge Intervals.cpp */; };
 		1E29724F1A526507001FE76F /* Combination Sum II.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1E29724E1A526507001FE76F /* Combination Sum II.cpp */; };
 		1E5DCC601A529506004AAAD5 /* Word Ladder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1E5DCC5F1A529506004AAAD5 /* Word Ladder.cpp */; };
+		1E6EDE781A67829700B5E595 /* Largest Number.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1E6EDE771A67829700B5E595 /* Largest Number.cpp */; };
+		1E6EDE831A67A72B00B5E595 /* Sort Colors.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1E6EDE821A67A72B00B5E595 /* Sort Colors.cpp */; };
+		1E6EDE8E1A67AB2900B5E595 /* Wildcard Matching.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1E6EDE8D1A67AB2900B5E595 /* Wildcard Matching.cpp */; };
 		1E95AF7A1A53A11A000EFDA4 /* Substring with Concatenation of All Words.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1E95AF791A53A11A000EFDA4 /* Substring with Concatenation of All Words.cpp */; };
 		1E95AF851A53A635000EFDA4 /* Spiral Matrix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1E95AF841A53A635000EFDA4 /* Spiral Matrix.cpp */; };
 		1E95AF901A53C51F000EFDA4 /* Max Points on a Line.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1E95AF8F1A53C51F000EFDA4 /* Max Points on a Line.cpp */; };
@@ -38,6 +41,33 @@
 			runOnlyForDeploymentPostprocessing = 1;
 		};
 		1E5DCC5B1A529506004AAAD5 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		1E6EDE731A67829700B5E595 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		1E6EDE7E1A67A72B00B5E595 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		1E6EDE891A67AB2900B5E595 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -118,6 +148,12 @@
 		1E29724E1A526507001FE76F /* Combination Sum II.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Combination Sum II.cpp"; sourceTree = "<group>"; };
 		1E5DCC5D1A529506004AAAD5 /* Word Ladder */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Word Ladder"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E5DCC5F1A529506004AAAD5 /* Word Ladder.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Word Ladder.cpp"; sourceTree = "<group>"; };
+		1E6EDE751A67829700B5E595 /* Largest Number */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Largest Number"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E6EDE771A67829700B5E595 /* Largest Number.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Largest Number.cpp"; sourceTree = "<group>"; };
+		1E6EDE801A67A72B00B5E595 /* Sort Colors */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Sort Colors"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E6EDE821A67A72B00B5E595 /* Sort Colors.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Sort Colors.cpp"; sourceTree = "<group>"; };
+		1E6EDE8B1A67AB2900B5E595 /* Wildcard Matching */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Wildcard Matching"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E6EDE8D1A67AB2900B5E595 /* Wildcard Matching.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Wildcard Matching.cpp"; sourceTree = "<group>"; };
 		1E95AF771A53A11A000EFDA4 /* Substring with Concatenation of All Words */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Substring with Concatenation of All Words"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E95AF791A53A11A000EFDA4 /* Substring with Concatenation of All Words.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Substring with Concatenation of All Words.cpp"; sourceTree = "<group>"; };
 		1E95AF821A53A635000EFDA4 /* Spiral Matrix */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Spiral Matrix"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -149,6 +185,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		1E5DCC5A1A529506004AAAD5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E6EDE721A67829700B5E595 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E6EDE7D1A67A72B00B5E595 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E6EDE881A67AB2900B5E595 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -231,6 +288,30 @@
 			path = "Word Ladder";
 			sourceTree = "<group>";
 		};
+		1E6EDE761A67829700B5E595 /* Largest Number */ = {
+			isa = PBXGroup;
+			children = (
+				1E6EDE771A67829700B5E595 /* Largest Number.cpp */,
+			);
+			path = "Largest Number";
+			sourceTree = "<group>";
+		};
+		1E6EDE811A67A72B00B5E595 /* Sort Colors */ = {
+			isa = PBXGroup;
+			children = (
+				1E6EDE821A67A72B00B5E595 /* Sort Colors.cpp */,
+			);
+			path = "Sort Colors";
+			sourceTree = "<group>";
+		};
+		1E6EDE8C1A67AB2900B5E595 /* Wildcard Matching */ = {
+			isa = PBXGroup;
+			children = (
+				1E6EDE8D1A67AB2900B5E595 /* Wildcard Matching.cpp */,
+			);
+			path = "Wildcard Matching";
+			sourceTree = "<group>";
+		};
 		1E95AF781A53A11A000EFDA4 /* Substring with Concatenation of All Words */ = {
 			isa = PBXGroup;
 			children = (
@@ -267,6 +348,9 @@
 				1E95AF781A53A11A000EFDA4 /* Substring with Concatenation of All Words */,
 				1E95AF831A53A635000EFDA4 /* Spiral Matrix */,
 				1E95AF8E1A53C51F000EFDA4 /* Max Points on a Line */,
+				1E6EDE761A67829700B5E595 /* Largest Number */,
+				1E6EDE811A67A72B00B5E595 /* Sort Colors */,
+				1E6EDE8C1A67AB2900B5E595 /* Wildcard Matching */,
 				1EFFB6BD1A510B9100ECDB7E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -284,6 +368,9 @@
 				1E95AF771A53A11A000EFDA4 /* Substring with Concatenation of All Words */,
 				1E95AF821A53A635000EFDA4 /* Spiral Matrix */,
 				1E95AF8D1A53C51F000EFDA4 /* Max Points on a Line */,
+				1E6EDE751A67829700B5E595 /* Largest Number */,
+				1E6EDE801A67A72B00B5E595 /* Sort Colors */,
+				1E6EDE8B1A67AB2900B5E595 /* Wildcard Matching */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -364,6 +451,57 @@
 			name = "Word Ladder";
 			productName = "Word Ladder";
 			productReference = 1E5DCC5D1A529506004AAAD5 /* Word Ladder */;
+			productType = "com.apple.product-type.tool";
+		};
+		1E6EDE741A67829700B5E595 /* Largest Number */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1E6EDE7B1A67829700B5E595 /* Build configuration list for PBXNativeTarget "Largest Number" */;
+			buildPhases = (
+				1E6EDE711A67829700B5E595 /* Sources */,
+				1E6EDE721A67829700B5E595 /* Frameworks */,
+				1E6EDE731A67829700B5E595 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Largest Number";
+			productName = "Largest Number";
+			productReference = 1E6EDE751A67829700B5E595 /* Largest Number */;
+			productType = "com.apple.product-type.tool";
+		};
+		1E6EDE7F1A67A72B00B5E595 /* Sort Colors */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1E6EDE861A67A72B00B5E595 /* Build configuration list for PBXNativeTarget "Sort Colors" */;
+			buildPhases = (
+				1E6EDE7C1A67A72B00B5E595 /* Sources */,
+				1E6EDE7D1A67A72B00B5E595 /* Frameworks */,
+				1E6EDE7E1A67A72B00B5E595 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Sort Colors";
+			productName = "Sort Colors";
+			productReference = 1E6EDE801A67A72B00B5E595 /* Sort Colors */;
+			productType = "com.apple.product-type.tool";
+		};
+		1E6EDE8A1A67AB2900B5E595 /* Wildcard Matching */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1E6EDE8F1A67AB2900B5E595 /* Build configuration list for PBXNativeTarget "Wildcard Matching" */;
+			buildPhases = (
+				1E6EDE871A67AB2900B5E595 /* Sources */,
+				1E6EDE881A67AB2900B5E595 /* Frameworks */,
+				1E6EDE891A67AB2900B5E595 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Wildcard Matching";
+			productName = "Wildcard Matching";
+			productReference = 1E6EDE8B1A67AB2900B5E595 /* Wildcard Matching */;
 			productType = "com.apple.product-type.tool";
 		};
 		1E95AF761A53A11A000EFDA4 /* Substring with Concatenation of All Words */ = {
@@ -503,6 +641,15 @@
 					1E5DCC5C1A529506004AAAD5 = {
 						CreatedOnToolsVersion = 6.1;
 					};
+					1E6EDE741A67829700B5E595 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					1E6EDE7F1A67A72B00B5E595 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					1E6EDE8A1A67AB2900B5E595 = {
+						CreatedOnToolsVersion = 6.1;
+					};
 					1E95AF761A53A11A000EFDA4 = {
 						CreatedOnToolsVersion = 6.1;
 					};
@@ -548,6 +695,9 @@
 				1E95AF761A53A11A000EFDA4 /* Substring with Concatenation of All Words */,
 				1E95AF811A53A635000EFDA4 /* Spiral Matrix */,
 				1E95AF8C1A53C51F000EFDA4 /* Max Points on a Line */,
+				1E6EDE741A67829700B5E595 /* Largest Number */,
+				1E6EDE7F1A67A72B00B5E595 /* Sort Colors */,
+				1E6EDE8A1A67AB2900B5E595 /* Wildcard Matching */,
 			);
 		};
 /* End PBXProject section */
@@ -574,6 +724,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				1E5DCC601A529506004AAAD5 /* Word Ladder.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E6EDE711A67829700B5E595 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E6EDE781A67829700B5E595 /* Largest Number.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E6EDE7C1A67A72B00B5E595 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E6EDE831A67A72B00B5E595 /* Sort Colors.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E6EDE871A67AB2900B5E595 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E6EDE8E1A67AB2900B5E595 /* Wildcard Matching.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -683,6 +857,60 @@
 			name = Debug;
 		};
 		1E5DCC621A529506004AAAD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		1E6EDE791A67829700B5E595 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1E6EDE7A1A67829700B5E595 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		1E6EDE841A67A72B00B5E595 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1E6EDE851A67A72B00B5E595 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		1E6EDE901A67AB2900B5E595 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1E6EDE911A67AB2900B5E595 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -915,6 +1143,31 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		1E6EDE7B1A67829700B5E595 /* Build configuration list for PBXNativeTarget "Largest Number" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E6EDE791A67829700B5E595 /* Debug */,
+				1E6EDE7A1A67829700B5E595 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1E6EDE861A67A72B00B5E595 /* Build configuration list for PBXNativeTarget "Sort Colors" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E6EDE841A67A72B00B5E595 /* Debug */,
+				1E6EDE851A67A72B00B5E595 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1E6EDE8F1A67AB2900B5E595 /* Build configuration list for PBXNativeTarget "Wildcard Matching" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E6EDE901A67AB2900B5E595 /* Debug */,
+				1E6EDE911A67AB2900B5E595 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		1E95AF7D1A53A11A000EFDA4 /* Build configuration list for PBXNativeTarget "Substring with Concatenation of All Words" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -940,6 +1193,7 @@
 				1E95AF921A53C51F000EFDA4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1EFFB6B71A510B9100ECDB7E /* Build configuration list for PBXProject "leetCode" */ = {
 			isa = XCConfigurationList;
