@@ -16,6 +16,8 @@
 		1E95AF7A1A53A11A000EFDA4 /* Substring with Concatenation of All Words.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1E95AF791A53A11A000EFDA4 /* Substring with Concatenation of All Words.cpp */; };
 		1E95AF851A53A635000EFDA4 /* Spiral Matrix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1E95AF841A53A635000EFDA4 /* Spiral Matrix.cpp */; };
 		1E95AF901A53C51F000EFDA4 /* Max Points on a Line.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1E95AF8F1A53C51F000EFDA4 /* Max Points on a Line.cpp */; };
+		1EAA5DF71A6E4C8800116E1E /* Copy List with Random Pointer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1EAA5DF61A6E4C8800116E1E /* Copy List with Random Pointer.cpp */; };
+		1EE5DDB51A835B890074D282 /* Single Number.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1EE5DDB41A835B890074D282 /* Single Number.cpp */; };
 		1EFFB6CD1A510BB100ECDB7E /* Insert Interval.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1EFFB6CC1A510BB100ECDB7E /* Insert Interval.cpp */; };
 		1EFFB6E31A514A1B00ECDB7E /* Remove Element.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1EFFB6E21A514A1B00ECDB7E /* Remove Element.cpp */; };
 		1EFFB6EE1A515ECE00ECDB7E /* Rotate List.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1EFFB6ED1A515ECE00ECDB7E /* Rotate List.cpp */; };
@@ -103,6 +105,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		1EAA5DF21A6E4C8800116E1E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		1EE5DDB01A835B880074D282 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 		1EFFB6BA1A510B9100ECDB7E /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -160,6 +180,10 @@
 		1E95AF841A53A635000EFDA4 /* Spiral Matrix.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Spiral Matrix.cpp"; sourceTree = "<group>"; };
 		1E95AF8D1A53C51F000EFDA4 /* Max Points on a Line */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Max Points on a Line"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E95AF8F1A53C51F000EFDA4 /* Max Points on a Line.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Max Points on a Line.cpp"; sourceTree = "<group>"; };
+		1EAA5DF41A6E4C8800116E1E /* Copy List with Random Pointer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Copy List with Random Pointer"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1EAA5DF61A6E4C8800116E1E /* Copy List with Random Pointer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Copy List with Random Pointer.cpp"; sourceTree = "<group>"; };
+		1EE5DDB21A835B880074D282 /* Single Number */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Single Number"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1EE5DDB41A835B890074D282 /* Single Number.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Single Number.cpp"; sourceTree = "<group>"; };
 		1EFFB6BC1A510B9100ECDB7E /* leetCode */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = leetCode; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EFFB6CA1A510BB100ECDB7E /* Insert Interval */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Insert Interval"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EFFB6CC1A510BB100ECDB7E /* Insert Interval.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Insert Interval.cpp"; sourceTree = "<group>"; };
@@ -227,6 +251,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		1E95AF8A1A53C51F000EFDA4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1EAA5DF11A6E4C8800116E1E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1EE5DDAF1A835B880074D282 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -336,6 +374,22 @@
 			path = "Max Points on a Line";
 			sourceTree = "<group>";
 		};
+		1EAA5DF51A6E4C8800116E1E /* Copy List with Random Pointer */ = {
+			isa = PBXGroup;
+			children = (
+				1EAA5DF61A6E4C8800116E1E /* Copy List with Random Pointer.cpp */,
+			);
+			path = "Copy List with Random Pointer";
+			sourceTree = "<group>";
+		};
+		1EE5DDB31A835B890074D282 /* Single Number */ = {
+			isa = PBXGroup;
+			children = (
+				1EE5DDB41A835B890074D282 /* Single Number.cpp */,
+			);
+			path = "Single Number";
+			sourceTree = "<group>";
+		};
 		1EFFB6B31A510B9100ECDB7E = {
 			isa = PBXGroup;
 			children = (
@@ -351,6 +405,8 @@
 				1E6EDE761A67829700B5E595 /* Largest Number */,
 				1E6EDE811A67A72B00B5E595 /* Sort Colors */,
 				1E6EDE8C1A67AB2900B5E595 /* Wildcard Matching */,
+				1EAA5DF51A6E4C8800116E1E /* Copy List with Random Pointer */,
+				1EE5DDB31A835B890074D282 /* Single Number */,
 				1EFFB6BD1A510B9100ECDB7E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -371,6 +427,8 @@
 				1E6EDE751A67829700B5E595 /* Largest Number */,
 				1E6EDE801A67A72B00B5E595 /* Sort Colors */,
 				1E6EDE8B1A67AB2900B5E595 /* Wildcard Matching */,
+				1EAA5DF41A6E4C8800116E1E /* Copy List with Random Pointer */,
+				1EE5DDB21A835B880074D282 /* Single Number */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -555,6 +613,40 @@
 			productReference = 1E95AF8D1A53C51F000EFDA4 /* Max Points on a Line */;
 			productType = "com.apple.product-type.tool";
 		};
+		1EAA5DF31A6E4C8800116E1E /* Copy List with Random Pointer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1EAA5DFA1A6E4C8800116E1E /* Build configuration list for PBXNativeTarget "Copy List with Random Pointer" */;
+			buildPhases = (
+				1EAA5DF01A6E4C8800116E1E /* Sources */,
+				1EAA5DF11A6E4C8800116E1E /* Frameworks */,
+				1EAA5DF21A6E4C8800116E1E /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Copy List with Random Pointer";
+			productName = "Copy List with Random Pointer";
+			productReference = 1EAA5DF41A6E4C8800116E1E /* Copy List with Random Pointer */;
+			productType = "com.apple.product-type.tool";
+		};
+		1EE5DDB11A835B880074D282 /* Single Number */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1EE5DDB81A835B890074D282 /* Build configuration list for PBXNativeTarget "Single Number" */;
+			buildPhases = (
+				1EE5DDAE1A835B880074D282 /* Sources */,
+				1EE5DDAF1A835B880074D282 /* Frameworks */,
+				1EE5DDB01A835B880074D282 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Single Number";
+			productName = "Single Number";
+			productReference = 1EE5DDB21A835B880074D282 /* Single Number */;
+			productType = "com.apple.product-type.tool";
+		};
 		1EFFB6BB1A510B9100ECDB7E /* leetCode */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1EFFB6C31A510B9100ECDB7E /* Build configuration list for PBXNativeTarget "leetCode" */;
@@ -659,6 +751,12 @@
 					1E95AF8C1A53C51F000EFDA4 = {
 						CreatedOnToolsVersion = 6.1;
 					};
+					1EAA5DF31A6E4C8800116E1E = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					1EE5DDB11A835B880074D282 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
 					1EFFB6BB1A510B9100ECDB7E = {
 						CreatedOnToolsVersion = 6.1;
 					};
@@ -698,6 +796,8 @@
 				1E6EDE741A67829700B5E595 /* Largest Number */,
 				1E6EDE7F1A67A72B00B5E595 /* Sort Colors */,
 				1E6EDE8A1A67AB2900B5E595 /* Wildcard Matching */,
+				1EAA5DF31A6E4C8800116E1E /* Copy List with Random Pointer */,
+				1EE5DDB11A835B880074D282 /* Single Number */,
 			);
 		};
 /* End PBXProject section */
@@ -772,6 +872,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				1E95AF901A53C51F000EFDA4 /* Max Points on a Line.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1EAA5DF01A6E4C8800116E1E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1EAA5DF71A6E4C8800116E1E /* Copy List with Random Pointer.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1EE5DDAE1A835B880074D282 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1EE5DDB51A835B890074D282 /* Single Number.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -971,6 +1087,42 @@
 			};
 			name = Release;
 		};
+		1EAA5DF81A6E4C8800116E1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1EAA5DF91A6E4C8800116E1E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		1EE5DDB61A835B890074D282 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1EE5DDB71A835B890074D282 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		1EFFB6C11A510B9100ECDB7E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1159,6 +1311,7 @@
 				1E6EDE851A67A72B00B5E595 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1E6EDE8F1A67AB2900B5E595 /* Build configuration list for PBXNativeTarget "Wildcard Matching" */ = {
 			isa = XCConfigurationList;
@@ -1167,6 +1320,7 @@
 				1E6EDE911A67AB2900B5E595 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1E95AF7D1A53A11A000EFDA4 /* Build configuration list for PBXNativeTarget "Substring with Concatenation of All Words" */ = {
 			isa = XCConfigurationList;
@@ -1194,6 +1348,23 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		1EAA5DFA1A6E4C8800116E1E /* Build configuration list for PBXNativeTarget "Copy List with Random Pointer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1EAA5DF81A6E4C8800116E1E /* Debug */,
+				1EAA5DF91A6E4C8800116E1E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1EE5DDB81A835B890074D282 /* Build configuration list for PBXNativeTarget "Single Number" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1EE5DDB61A835B890074D282 /* Debug */,
+				1EE5DDB71A835B890074D282 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 		1EFFB6B71A510B9100ECDB7E /* Build configuration list for PBXProject "leetCode" */ = {
 			isa = XCConfigurationList;

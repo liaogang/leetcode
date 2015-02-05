@@ -153,7 +153,7 @@ void printList(ListNode *head)
     printf("print list: %p:\n",head);
     for (; head != NULL; head=head->next)
         printf("%d\n",head->val);
-    printf("print list end\n",head);
+    printf( "print list end \n");
 }
 
 template<class T>
@@ -165,7 +165,7 @@ void printContainer(T c)
 
 void printVecVec(vector<vector<int> > &A)
 {
-    printf("~~~~~~~size: %d~~~~~~>>>\n",A.size());
+    printf("~~~~~~~size: %lu~~~~~~>>>\n",A.size());
     for (auto i = A.begin(); i != A.end(); i++)
     {
         vector<int> row = *i;
@@ -208,4 +208,12 @@ struct Line
     Line(Point aa, Point bb):a(aa),b(bb){}
 };
 
+
+///Definition for singly-linked list with a random pointer.
+struct RandomListNode
+{
+    int label;
+    RandomListNode *next, *random;
+    RandomListNode(int x) : label(x), next(NULL), random(NULL) {}
+};
 
