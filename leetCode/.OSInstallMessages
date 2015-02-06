@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Domain</key>
+		<string>com.apple.usage.esd.installmethod</string>
+		<key>Signatures</key>
+		<array>
+			<string>Mac App Store</string>
+		</array>
+		<key>Summarize</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>Domain</key>
+		<string>com.apple.usage.esd.targetvolume</string>
+		<key>Signatures</key>
+		<array>
+			<string>Single HFS</string>
+			<string>boot</string>
+			<string>10.9.2</string>
+		</array>
+		<key>Summarize</key>
+		<true/>
+		<key>Values</key>
+		<array>
+			<integer>953049</integer>
+			<integer>729982</integer>
+		</array>
+	</dict>
+</array>
+</plist>
