@@ -8,9 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		1E02ABA31B4BA37600E21A84 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E02ABA21B4BA37600E21A84 /* main.m */; };
+		1E11DFBE1C0EBF4900A30E0C /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1E11DFBD1C0EBF4900A30E0C /* main.cpp */; };
 		1E16D5431A8B3B4900C844ED /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1E16D5421A8B3B4900C844ED /* main.cpp */; };
 		1E21DA9C1A539CD30047F243 /* Merge Intervals.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1E21DA9B1A539CD30047F243 /* Merge Intervals.cpp */; };
 		1E227F821C0D8DBF0057FBCE /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1E227F811C0D8DBF0057FBCE /* main.cpp */; };
+		1E22AE5A1C0E80A8004983B3 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1E22AE591C0E80A8004983B3 /* main.cpp */; };
 		1E29724F1A526507001FE76F /* Combination Sum II.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1E29724E1A526507001FE76F /* Combination Sum II.cpp */; };
 		1E5DCC601A529506004AAAD5 /* Word Ladder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1E5DCC5F1A529506004AAAD5 /* Word Ladder.cpp */; };
 		1E6129EB1AB140FD00D70E69 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1E6129EA1AB140FD00D70E69 /* main.cpp */; };
@@ -20,6 +22,8 @@
 		1E6EDE831A67A72B00B5E595 /* Sort Colors.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1E6EDE821A67A72B00B5E595 /* Sort Colors.cpp */; };
 		1E6EDE8E1A67AB2900B5E595 /* Wildcard Matching.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1E6EDE8D1A67AB2900B5E595 /* Wildcard Matching.cpp */; };
 		1E89360B1B4E3E9A002A851A /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1E89360A1B4E3E9A002A851A /* main.cpp */; };
+		1E89ED071C61E33D00A78344 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1E89ED061C61E33D00A78344 /* main.cpp */; };
+		1E89ED121C61E80E00A78344 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1E89ED111C61E80E00A78344 /* main.cpp */; };
 		1E8F702B1AA444140012402E /* Sudoku Solver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1E8F702A1AA444140012402E /* Sudoku Solver.cpp */; };
 		1E95AF7A1A53A11A000EFDA4 /* Substring with Concatenation of All Words.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1E95AF791A53A11A000EFDA4 /* Substring with Concatenation of All Words.cpp */; };
 		1E95AF851A53A635000EFDA4 /* Spiral Matrix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1E95AF841A53A635000EFDA4 /* Spiral Matrix.cpp */; };
@@ -47,6 +51,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		1E11DFB91C0EBF4900A30E0C /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 		1E16D53E1A8B3B4900C844ED /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -66,6 +79,15 @@
 			runOnlyForDeploymentPostprocessing = 1;
 		};
 		1E227F7D1C0D8DBD0057FBCE /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		1E22AE551C0E80A8004983B3 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -147,6 +169,24 @@
 			runOnlyForDeploymentPostprocessing = 1;
 		};
 		1E8936061B4E3E9A002A851A /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		1E89ED021C61E33D00A78344 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		1E89ED0D1C61E80E00A78344 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -304,12 +344,16 @@
 /* Begin PBXFileReference section */
 		1E02ABA01B4BA37600E21A84 /* Shortest Superstring Problem */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Shortest Superstring Problem"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E02ABA21B4BA37600E21A84 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1E11DFBB1C0EBF4900A30E0C /* Find Median from Data Stream */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Find Median from Data Stream"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E11DFBD1C0EBF4900A30E0C /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		1E16D5401A8B3B4900C844ED /* remove_if */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = remove_if; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E16D5421A8B3B4900C844ED /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		1E21DA991A539CD30047F243 /* Merge Intervals */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Merge Intervals"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E21DA9B1A539CD30047F243 /* Merge Intervals.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Merge Intervals.cpp"; sourceTree = "<group>"; };
 		1E227F7F1C0D8DBD0057FBCE /* Range Sum Query */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Range Sum Query"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E227F811C0D8DBF0057FBCE /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		1E22AE571C0E80A8004983B3 /* Find the Duplicate Number */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Find the Duplicate Number"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E22AE591C0E80A8004983B3 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		1E29724C1A526506001FE76F /* Combination Sum II */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Combination Sum II"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E29724E1A526507001FE76F /* Combination Sum II.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Combination Sum II.cpp"; sourceTree = "<group>"; };
 		1E5DCC5D1A529506004AAAD5 /* Word Ladder */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Word Ladder"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -328,6 +372,10 @@
 		1E6EDE8D1A67AB2900B5E595 /* Wildcard Matching.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Wildcard Matching.cpp"; sourceTree = "<group>"; };
 		1E8936081B4E3E9A002A851A /* Count Primes */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Count Primes"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E89360A1B4E3E9A002A851A /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		1E89ED041C61E33D00A78344 /* Nim Game */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Nim Game"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E89ED061C61E33D00A78344 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		1E89ED0F1C61E80E00A78344 /* Add Digits */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Add Digits"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E89ED111C61E80E00A78344 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		1E8F70281AA444140012402E /* Sudoku Solver */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Sudoku Solver"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E8F702A1AA444140012402E /* Sudoku Solver.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Sudoku Solver.cpp"; sourceTree = "<group>"; };
 		1E95AF771A53A11A000EFDA4 /* Substring with Concatenation of All Words */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Substring with Concatenation of All Words"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -371,6 +419,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1E11DFB81C0EBF4900A30E0C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1E16D53D1A8B3B4900C844ED /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -386,6 +441,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		1E227F7C1C0D8DBD0057FBCE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E22AE541C0E80A8004983B3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -449,6 +511,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		1E8936051B4E3E9A002A851A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E89ED011C61E33D00A78344 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E89ED0C1C61E80E00A78344 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -578,6 +654,14 @@
 			path = "Shortest Superstring Problem";
 			sourceTree = "<group>";
 		};
+		1E11DFBC1C0EBF4900A30E0C /* Find Median from Data Stream */ = {
+			isa = PBXGroup;
+			children = (
+				1E11DFBD1C0EBF4900A30E0C /* main.cpp */,
+			);
+			path = "Find Median from Data Stream";
+			sourceTree = "<group>";
+		};
 		1E16D5411A8B3B4900C844ED /* remove_if */ = {
 			isa = PBXGroup;
 			children = (
@@ -600,6 +684,14 @@
 				1E227F811C0D8DBF0057FBCE /* main.cpp */,
 			);
 			path = "Range Sum Query";
+			sourceTree = "<group>";
+		};
+		1E22AE581C0E80A8004983B3 /* Find the Duplicate Number */ = {
+			isa = PBXGroup;
+			children = (
+				1E22AE591C0E80A8004983B3 /* main.cpp */,
+			);
+			path = "Find the Duplicate Number";
 			sourceTree = "<group>";
 		};
 		1E29724D1A526506001FE76F /* Combination Sum II */ = {
@@ -672,6 +764,22 @@
 				1E89360A1B4E3E9A002A851A /* main.cpp */,
 			);
 			path = "Count Primes";
+			sourceTree = "<group>";
+		};
+		1E89ED051C61E33D00A78344 /* Nim Game */ = {
+			isa = PBXGroup;
+			children = (
+				1E89ED061C61E33D00A78344 /* main.cpp */,
+			);
+			path = "Nim Game";
+			sourceTree = "<group>";
+		};
+		1E89ED101C61E80E00A78344 /* Add Digits */ = {
+			isa = PBXGroup;
+			children = (
+				1E89ED111C61E80E00A78344 /* main.cpp */,
+			);
+			path = "Add Digits";
 			sourceTree = "<group>";
 		};
 		1E8F70291AA444140012402E /* Sudoku Solver */ = {
@@ -811,6 +919,10 @@
 				1E9BB7311B7B14FD000B7E05 /* Valid Parentheses */,
 				1E9BB73C1B7B1BC1000B7E05 /* Generate Parentheses */,
 				1E227F801C0D8DBF0057FBCE /* Range Sum Query */,
+				1E22AE581C0E80A8004983B3 /* Find the Duplicate Number */,
+				1E11DFBC1C0EBF4900A30E0C /* Find Median from Data Stream */,
+				1E89ED051C61E33D00A78344 /* Nim Game */,
+				1E89ED101C61E80E00A78344 /* Add Digits */,
 				1EFFB6BD1A510B9100ECDB7E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -847,6 +959,10 @@
 				1E9BB7301B7B14FD000B7E05 /* Valid Parentheses */,
 				1E9BB73B1B7B1BC1000B7E05 /* Generate Parentheses */,
 				1E227F7F1C0D8DBD0057FBCE /* Range Sum Query */,
+				1E22AE571C0E80A8004983B3 /* Find the Duplicate Number */,
+				1E11DFBB1C0EBF4900A30E0C /* Find Median from Data Stream */,
+				1E89ED041C61E33D00A78344 /* Nim Game */,
+				1E89ED0F1C61E80E00A78344 /* Add Digits */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -893,6 +1009,23 @@
 			name = "Shortest Superstring Problem";
 			productName = "Shortest Superstring Problem";
 			productReference = 1E02ABA01B4BA37600E21A84 /* Shortest Superstring Problem */;
+			productType = "com.apple.product-type.tool";
+		};
+		1E11DFBA1C0EBF4900A30E0C /* Find Median from Data Stream */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1E11DFC11C0EBF4A00A30E0C /* Build configuration list for PBXNativeTarget "Find Median from Data Stream" */;
+			buildPhases = (
+				1E11DFB71C0EBF4900A30E0C /* Sources */,
+				1E11DFB81C0EBF4900A30E0C /* Frameworks */,
+				1E11DFB91C0EBF4900A30E0C /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Find Median from Data Stream";
+			productName = "Find Median from Data Stream";
+			productReference = 1E11DFBB1C0EBF4900A30E0C /* Find Median from Data Stream */;
 			productType = "com.apple.product-type.tool";
 		};
 		1E16D53F1A8B3B4900C844ED /* remove_if */ = {
@@ -944,6 +1077,23 @@
 			name = "Range Sum Query";
 			productName = "Range Sum Query";
 			productReference = 1E227F7F1C0D8DBD0057FBCE /* Range Sum Query */;
+			productType = "com.apple.product-type.tool";
+		};
+		1E22AE561C0E80A8004983B3 /* Find the Duplicate Number */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1E22AE5D1C0E80A8004983B3 /* Build configuration list for PBXNativeTarget "Find the Duplicate Number" */;
+			buildPhases = (
+				1E22AE531C0E80A8004983B3 /* Sources */,
+				1E22AE541C0E80A8004983B3 /* Frameworks */,
+				1E22AE551C0E80A8004983B3 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Find the Duplicate Number";
+			productName = "Find the Duplicate Number";
+			productReference = 1E22AE571C0E80A8004983B3 /* Find the Duplicate Number */;
 			productType = "com.apple.product-type.tool";
 		};
 		1E29724B1A526506001FE76F /* Combination Sum II */ = {
@@ -1097,6 +1247,40 @@
 			name = "Count Primes";
 			productName = "Count Primes";
 			productReference = 1E8936081B4E3E9A002A851A /* Count Primes */;
+			productType = "com.apple.product-type.tool";
+		};
+		1E89ED031C61E33D00A78344 /* Nim Game */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1E89ED0A1C61E33D00A78344 /* Build configuration list for PBXNativeTarget "Nim Game" */;
+			buildPhases = (
+				1E89ED001C61E33D00A78344 /* Sources */,
+				1E89ED011C61E33D00A78344 /* Frameworks */,
+				1E89ED021C61E33D00A78344 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Nim Game";
+			productName = "Nim Game";
+			productReference = 1E89ED041C61E33D00A78344 /* Nim Game */;
+			productType = "com.apple.product-type.tool";
+		};
+		1E89ED0E1C61E80E00A78344 /* Add Digits */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1E89ED131C61E80E00A78344 /* Build configuration list for PBXNativeTarget "Add Digits" */;
+			buildPhases = (
+				1E89ED0B1C61E80E00A78344 /* Sources */,
+				1E89ED0C1C61E80E00A78344 /* Frameworks */,
+				1E89ED0D1C61E80E00A78344 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Add Digits";
+			productName = "Add Digits";
+			productReference = 1E89ED0F1C61E80E00A78344 /* Add Digits */;
 			productType = "com.apple.product-type.tool";
 		};
 		1E8F70271AA444140012402E /* Sudoku Solver */ = {
@@ -1383,6 +1567,9 @@
 					1E02AB9F1B4BA37600E21A84 = {
 						CreatedOnToolsVersion = 6.4;
 					};
+					1E11DFBA1C0EBF4900A30E0C = {
+						CreatedOnToolsVersion = 7.1;
+					};
 					1E16D53F1A8B3B4900C844ED = {
 						CreatedOnToolsVersion = 6.1.1;
 					};
@@ -1390,6 +1577,9 @@
 						CreatedOnToolsVersion = 6.1;
 					};
 					1E227F7E1C0D8DBD0057FBCE = {
+						CreatedOnToolsVersion = 7.1;
+					};
+					1E22AE561C0E80A8004983B3 = {
 						CreatedOnToolsVersion = 7.1;
 					};
 					1E29724B1A526506001FE76F = {
@@ -1418,6 +1608,12 @@
 					};
 					1E8936071B4E3E9A002A851A = {
 						CreatedOnToolsVersion = 6.4;
+					};
+					1E89ED031C61E33D00A78344 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					1E89ED0E1C61E80E00A78344 = {
+						CreatedOnToolsVersion = 7.2;
 					};
 					1E8F70271AA444140012402E = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -1510,6 +1706,10 @@
 				1E9BB72F1B7B14FD000B7E05 /* Valid Parentheses */,
 				1E9BB73A1B7B1BC1000B7E05 /* Generate Parentheses */,
 				1E227F7E1C0D8DBD0057FBCE /* Range Sum Query */,
+				1E22AE561C0E80A8004983B3 /* Find the Duplicate Number */,
+				1E11DFBA1C0EBF4900A30E0C /* Find Median from Data Stream */,
+				1E89ED031C61E33D00A78344 /* Nim Game */,
+				1E89ED0E1C61E80E00A78344 /* Add Digits */,
 			);
 		};
 /* End PBXProject section */
@@ -1520,6 +1720,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				1E02ABA31B4BA37600E21A84 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E11DFB71C0EBF4900A30E0C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E11DFBE1C0EBF4900A30E0C /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1544,6 +1752,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				1E227F821C0D8DBF0057FBCE /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E22AE531C0E80A8004983B3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E22AE5A1C0E80A8004983B3 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1616,6 +1832,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				1E89360B1B4E3E9A002A851A /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E89ED001C61E33D00A78344 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E89ED071C61E33D00A78344 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E89ED0B1C61E80E00A78344 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E89ED121C61E80E00A78344 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1771,6 +2003,27 @@
 			};
 			name = Release;
 		};
+		1E11DFBF1C0EBF4A00A30E0C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1E11DFC01C0EBF4A00A30E0C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		1E16D5441A8B3B4900C844ED /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1819,6 +2072,27 @@
 			name = Debug;
 		};
 		1E227F851C0D8DBF0057FBCE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		1E22AE5B1C0E80A8004983B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1E22AE5C1C0E80A8004983B3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "-";
@@ -1991,6 +2265,48 @@
 		1E89360D1B4E3E9A002A851A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		1E89ED081C61E33D00A78344 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1E89ED091C61E33D00A78344 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		1E89ED141C61E80E00A78344 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1E89ED151C61E80E00A78344 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				COPY_PHASE_STRIP = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -2387,6 +2703,15 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		1E11DFC11C0EBF4A00A30E0C /* Build configuration list for PBXNativeTarget "Find Median from Data Stream" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E11DFBF1C0EBF4A00A30E0C /* Debug */,
+				1E11DFC01C0EBF4A00A30E0C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		1E16D5461A8B3B4900C844ED /* Build configuration list for PBXNativeTarget "remove_if" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -2412,6 +2737,16 @@
 				1E227F851C0D8DBF0057FBCE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1E22AE5D1C0E80A8004983B3 /* Build configuration list for PBXNativeTarget "Find the Duplicate Number" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E22AE5B1C0E80A8004983B3 /* Debug */,
+				1E22AE5C1C0E80A8004983B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1E2972521A526507001FE76F /* Build configuration list for PBXNativeTarget "Combination Sum II" */ = {
 			isa = XCConfigurationList;
@@ -2493,6 +2828,22 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		1E89ED0A1C61E33D00A78344 /* Build configuration list for PBXNativeTarget "Nim Game" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E89ED081C61E33D00A78344 /* Debug */,
+				1E89ED091C61E33D00A78344 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1E89ED131C61E80E00A78344 /* Build configuration list for PBXNativeTarget "Add Digits" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E89ED141C61E80E00A78344 /* Debug */,
+				1E89ED151C61E80E00A78344 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 		1E8F702E1AA444140012402E /* Build configuration list for PBXNativeTarget "Sudoku Solver" */ = {
 			isa = XCConfigurationList;
