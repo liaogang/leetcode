@@ -21,6 +21,8 @@
 		1E6EDE781A67829700B5E595 /* Largest Number.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1E6EDE771A67829700B5E595 /* Largest Number.cpp */; };
 		1E6EDE831A67A72B00B5E595 /* Sort Colors.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1E6EDE821A67A72B00B5E595 /* Sort Colors.cpp */; };
 		1E6EDE8E1A67AB2900B5E595 /* Wildcard Matching.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1E6EDE8D1A67AB2900B5E595 /* Wildcard Matching.cpp */; };
+		1E7C144E1C7306CD00886275 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1E7C144D1C7306CD00886275 /* main.cpp */; };
+		1E7C14591C730DC100886275 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1E7C14581C730DC100886275 /* main.cpp */; };
 		1E89360B1B4E3E9A002A851A /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1E89360A1B4E3E9A002A851A /* main.cpp */; };
 		1E89ED071C61E33D00A78344 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1E89ED061C61E33D00A78344 /* main.cpp */; };
 		1E89ED121C61E80E00A78344 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1E89ED111C61E80E00A78344 /* main.cpp */; };
@@ -160,6 +162,24 @@
 			runOnlyForDeploymentPostprocessing = 1;
 		};
 		1E6EDE891A67AB2900B5E595 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		1E7C14491C7306CD00886275 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		1E7C14541C730DC000886275 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -370,6 +390,10 @@
 		1E6EDE821A67A72B00B5E595 /* Sort Colors.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Sort Colors.cpp"; sourceTree = "<group>"; };
 		1E6EDE8B1A67AB2900B5E595 /* Wildcard Matching */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Wildcard Matching"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E6EDE8D1A67AB2900B5E595 /* Wildcard Matching.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Wildcard Matching.cpp"; sourceTree = "<group>"; };
+		1E7C144B1C7306CD00886275 /* Maximum Depth of Binary Tree */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Maximum Depth of Binary Tree"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E7C144D1C7306CD00886275 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		1E7C14561C730DC000886275 /* Valid Sudoku */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Valid Sudoku"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E7C14581C730DC100886275 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		1E8936081B4E3E9A002A851A /* Count Primes */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Count Primes"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E89360A1B4E3E9A002A851A /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		1E89ED041C61E33D00A78344 /* Nim Game */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Nim Game"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -504,6 +528,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		1E6EDE881A67AB2900B5E595 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E7C14481C7306CD00886275 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E7C14531C730DC000886275 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -758,6 +796,22 @@
 			path = "Wildcard Matching";
 			sourceTree = "<group>";
 		};
+		1E7C144C1C7306CD00886275 /* Maximum Depth of Binary Tree */ = {
+			isa = PBXGroup;
+			children = (
+				1E7C144D1C7306CD00886275 /* main.cpp */,
+			);
+			path = "Maximum Depth of Binary Tree";
+			sourceTree = "<group>";
+		};
+		1E7C14571C730DC000886275 /* Valid Sudoku */ = {
+			isa = PBXGroup;
+			children = (
+				1E7C14581C730DC100886275 /* main.cpp */,
+			);
+			path = "Valid Sudoku";
+			sourceTree = "<group>";
+		};
 		1E8936091B4E3E9A002A851A /* Count Primes */ = {
 			isa = PBXGroup;
 			children = (
@@ -923,6 +977,8 @@
 				1E11DFBC1C0EBF4900A30E0C /* Find Median from Data Stream */,
 				1E89ED051C61E33D00A78344 /* Nim Game */,
 				1E89ED101C61E80E00A78344 /* Add Digits */,
+				1E7C144C1C7306CD00886275 /* Maximum Depth of Binary Tree */,
+				1E7C14571C730DC000886275 /* Valid Sudoku */,
 				1EFFB6BD1A510B9100ECDB7E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -963,6 +1019,8 @@
 				1E11DFBB1C0EBF4900A30E0C /* Find Median from Data Stream */,
 				1E89ED041C61E33D00A78344 /* Nim Game */,
 				1E89ED0F1C61E80E00A78344 /* Add Digits */,
+				1E7C144B1C7306CD00886275 /* Maximum Depth of Binary Tree */,
+				1E7C14561C730DC000886275 /* Valid Sudoku */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1230,6 +1288,40 @@
 			name = "Wildcard Matching";
 			productName = "Wildcard Matching";
 			productReference = 1E6EDE8B1A67AB2900B5E595 /* Wildcard Matching */;
+			productType = "com.apple.product-type.tool";
+		};
+		1E7C144A1C7306CD00886275 /* Maximum Depth of Binary Tree */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1E7C14511C7306CD00886275 /* Build configuration list for PBXNativeTarget "Maximum Depth of Binary Tree" */;
+			buildPhases = (
+				1E7C14471C7306CD00886275 /* Sources */,
+				1E7C14481C7306CD00886275 /* Frameworks */,
+				1E7C14491C7306CD00886275 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Maximum Depth of Binary Tree";
+			productName = "Maximum Depth of Binary Tree";
+			productReference = 1E7C144B1C7306CD00886275 /* Maximum Depth of Binary Tree */;
+			productType = "com.apple.product-type.tool";
+		};
+		1E7C14551C730DC000886275 /* Valid Sudoku */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1E7C145A1C730DC100886275 /* Build configuration list for PBXNativeTarget "Valid Sudoku" */;
+			buildPhases = (
+				1E7C14521C730DC000886275 /* Sources */,
+				1E7C14531C730DC000886275 /* Frameworks */,
+				1E7C14541C730DC000886275 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Valid Sudoku";
+			productName = "Valid Sudoku";
+			productReference = 1E7C14561C730DC000886275 /* Valid Sudoku */;
 			productType = "com.apple.product-type.tool";
 		};
 		1E8936071B4E3E9A002A851A /* Count Primes */ = {
@@ -1606,6 +1698,12 @@
 					1E6EDE8A1A67AB2900B5E595 = {
 						CreatedOnToolsVersion = 6.1;
 					};
+					1E7C144A1C7306CD00886275 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					1E7C14551C730DC000886275 = {
+						CreatedOnToolsVersion = 7.2;
+					};
 					1E8936071B4E3E9A002A851A = {
 						CreatedOnToolsVersion = 6.4;
 					};
@@ -1710,6 +1808,8 @@
 				1E11DFBA1C0EBF4900A30E0C /* Find Median from Data Stream */,
 				1E89ED031C61E33D00A78344 /* Nim Game */,
 				1E89ED0E1C61E80E00A78344 /* Add Digits */,
+				1E7C144A1C7306CD00886275 /* Maximum Depth of Binary Tree */,
+				1E7C14551C730DC000886275 /* Valid Sudoku */,
 			);
 		};
 /* End PBXProject section */
@@ -1824,6 +1924,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				1E6EDE8E1A67AB2900B5E595 /* Wildcard Matching.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E7C14471C7306CD00886275 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E7C144E1C7306CD00886275 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E7C14521C730DC000886275 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E7C14591C730DC100886275 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2245,6 +2361,48 @@
 		1E6EDE911A67AB2900B5E595 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		1E7C144F1C7306CD00886275 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1E7C14501C7306CD00886275 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		1E7C145B1C730DC100886275 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1E7C145C1C730DC100886275 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -2820,6 +2978,22 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		1E7C14511C7306CD00886275 /* Build configuration list for PBXNativeTarget "Maximum Depth of Binary Tree" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E7C144F1C7306CD00886275 /* Debug */,
+				1E7C14501C7306CD00886275 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1E7C145A1C730DC100886275 /* Build configuration list for PBXNativeTarget "Valid Sudoku" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E7C145B1C730DC100886275 /* Debug */,
+				1E7C145C1C730DC100886275 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		1E89360E1B4E3E9A002A851A /* Build configuration list for PBXNativeTarget "Count Primes" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -2836,6 +3010,7 @@
 				1E89ED091C61E33D00A78344 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1E89ED131C61E80E00A78344 /* Build configuration list for PBXNativeTarget "Add Digits" */ = {
 			isa = XCConfigurationList;
@@ -2844,6 +3019,7 @@
 				1E89ED151C61E80E00A78344 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1E8F702E1AA444140012402E /* Build configuration list for PBXNativeTarget "Sudoku Solver" */ = {
 			isa = XCConfigurationList;
