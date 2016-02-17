@@ -6,6 +6,15 @@
 //  Copyright (c) 2014年 liaogang. All rights reserved.
 //
 
+
+/**
+    LeetCode
+    LeetCode OJ is a platform for preparing technical coding interviews.
+ 
+    @link https://leetcode.com
+ */
+
+
 #include <iostream>
 #include <vector>
 using namespace std;
