@@ -38,6 +38,7 @@
 		1E9BCE3D1B31767D00BF75FF /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1E9BCE3C1B31767D00BF75FF /* main.cpp */; };
 		1EAA5DF71A6E4C8800116E1E /* Copy List with Random Pointer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1EAA5DF61A6E4C8800116E1E /* Copy List with Random Pointer.cpp */; };
 		1EB79F001C755520002FD1A7 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1EB79EFF1C755520002FD1A7 /* main.cpp */; };
+		1EB79F0B1C75A32B002FD1A7 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1EB79F0A1C75A32B002FD1A7 /* main.cpp */; };
 		1ED623C51C744DB8005C7F27 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1ED623C41C744DB8005C7F27 /* main.cpp */; };
 		1EE5DDB51A835B890074D282 /* Single Number.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1EE5DDB41A835B890074D282 /* Single Number.cpp */; };
 		1EFFB6CD1A510BB100ECDB7E /* Insert Interval.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1EFFB6CC1A510BB100ECDB7E /* Insert Interval.cpp */; };
@@ -325,6 +326,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		1EB79F061C75A32B002FD1A7 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 		1ED623C01C744DB8005C7F27 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -446,6 +456,8 @@
 		1EAA5DF61A6E4C8800116E1E /* Copy List with Random Pointer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Copy List with Random Pointer.cpp"; sourceTree = "<group>"; };
 		1EB79EFD1C755520002FD1A7 /* Letter Combinations of a Phone Number */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Letter Combinations of a Phone Number"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EB79EFF1C755520002FD1A7 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		1EB79F081C75A32B002FD1A7 /* Longest Palindromic Substring */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Longest Palindromic Substring"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1EB79F0A1C75A32B002FD1A7 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		1ED623C21C744DB8005C7F27 /* Reorder List */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Reorder List"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1ED623C41C744DB8005C7F27 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		1EE5DDB21A835B880074D282 /* Single Number */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Single Number"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -671,6 +683,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		1EB79EFA1C755520002FD1A7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1EB79F051C75A32B002FD1A7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -978,6 +997,14 @@
 			path = "Letter Combinations of a Phone Number";
 			sourceTree = "<group>";
 		};
+		1EB79F091C75A32B002FD1A7 /* Longest Palindromic Substring */ = {
+			isa = PBXGroup;
+			children = (
+				1EB79F0A1C75A32B002FD1A7 /* main.cpp */,
+			);
+			path = "Longest Palindromic Substring";
+			sourceTree = "<group>";
+		};
 		1ED623C31C744DB8005C7F27 /* Reorder List */ = {
 			isa = PBXGroup;
 			children = (
@@ -1035,6 +1062,7 @@
 				1E7C14571C730DC000886275 /* Valid Sudoku */,
 				1ED623C31C744DB8005C7F27 /* Reorder List */,
 				1EB79EFE1C755520002FD1A7 /* Letter Combinations of a Phone Number */,
+				1EB79F091C75A32B002FD1A7 /* Longest Palindromic Substring */,
 				1EFFB6BD1A510B9100ECDB7E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -1079,6 +1107,7 @@
 				1E7C14561C730DC000886275 /* Valid Sudoku */,
 				1ED623C21C744DB8005C7F27 /* Reorder List */,
 				1EB79EFD1C755520002FD1A7 /* Letter Combinations of a Phone Number */,
+				1EB79F081C75A32B002FD1A7 /* Longest Palindromic Substring */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1637,6 +1666,23 @@
 			productReference = 1EB79EFD1C755520002FD1A7 /* Letter Combinations of a Phone Number */;
 			productType = "com.apple.product-type.tool";
 		};
+		1EB79F071C75A32B002FD1A7 /* Longest Palindromic Substring */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1EB79F0C1C75A32B002FD1A7 /* Build configuration list for PBXNativeTarget "Longest Palindromic Substring" */;
+			buildPhases = (
+				1EB79F041C75A32B002FD1A7 /* Sources */,
+				1EB79F051C75A32B002FD1A7 /* Frameworks */,
+				1EB79F061C75A32B002FD1A7 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Longest Palindromic Substring";
+			productName = "Longest Palindromic Substring";
+			productReference = 1EB79F081C75A32B002FD1A7 /* Longest Palindromic Substring */;
+			productType = "com.apple.product-type.tool";
+		};
 		1ED623C11C744DB8005C7F27 /* Reorder List */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1ED623C81C744DB8005C7F27 /* Build configuration list for PBXNativeTarget "Reorder List" */;
@@ -1841,6 +1887,9 @@
 					1EB79EFC1C755520002FD1A7 = {
 						CreatedOnToolsVersion = 7.2;
 					};
+					1EB79F071C75A32B002FD1A7 = {
+						CreatedOnToolsVersion = 7.2;
+					};
 					1ED623C11C744DB8005C7F27 = {
 						CreatedOnToolsVersion = 7.2;
 					};
@@ -1910,6 +1959,7 @@
 				1E7C14551C730DC000886275 /* Valid Sudoku */,
 				1ED623C11C744DB8005C7F27 /* Reorder List */,
 				1EB79EFC1C755520002FD1A7 /* Letter Combinations of a Phone Number */,
+				1EB79F071C75A32B002FD1A7 /* Longest Palindromic Substring */,
 			);
 		};
 /* End PBXProject section */
@@ -2160,6 +2210,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				1EB79F001C755520002FD1A7 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1EB79F041C75A32B002FD1A7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1EB79F0B1C75A32B002FD1A7 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2826,6 +2884,27 @@
 			};
 			name = Release;
 		};
+		1EB79F0D1C75A32B002FD1A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1EB79F0E1C75A32B002FD1A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		1ED623C61C744DB8005C7F27 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -3285,6 +3364,14 @@
 			buildConfigurations = (
 				1EB79F011C755520002FD1A7 /* Debug */,
 				1EB79F021C755520002FD1A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1EB79F0C1C75A32B002FD1A7 /* Build configuration list for PBXNativeTarget "Longest Palindromic Substring" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1EB79F0D1C75A32B002FD1A7 /* Debug */,
+				1EB79F0E1C75A32B002FD1A7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
