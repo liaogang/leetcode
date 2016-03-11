@@ -39,6 +39,8 @@
 		1EAA5DF71A6E4C8800116E1E /* Copy List with Random Pointer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1EAA5DF61A6E4C8800116E1E /* Copy List with Random Pointer.cpp */; };
 		1EB79F001C755520002FD1A7 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1EB79EFF1C755520002FD1A7 /* main.cpp */; };
 		1EB79F0B1C75A32B002FD1A7 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1EB79F0A1C75A32B002FD1A7 /* main.cpp */; };
+		1EB79F161C75AE8A002FD1A7 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1EB79F151C75AE8A002FD1A7 /* main.cpp */; };
+		1EBA25B11C926142003A1840 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1EBA25B01C926142003A1840 /* main.cpp */; };
 		1ED623C51C744DB8005C7F27 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1ED623C41C744DB8005C7F27 /* main.cpp */; };
 		1EE5DDB51A835B890074D282 /* Single Number.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1EE5DDB41A835B890074D282 /* Single Number.cpp */; };
 		1EFFB6CD1A510BB100ECDB7E /* Insert Interval.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1EFFB6CC1A510BB100ECDB7E /* Insert Interval.cpp */; };
@@ -335,6 +337,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		1EB79F111C75AE8A002FD1A7 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		1EBA25AC1C926142003A1840 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 		1ED623C01C744DB8005C7F27 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -458,6 +478,10 @@
 		1EB79EFF1C755520002FD1A7 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		1EB79F081C75A32B002FD1A7 /* Longest Palindromic Substring */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Longest Palindromic Substring"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EB79F0A1C75A32B002FD1A7 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		1EB79F131C75AE8A002FD1A7 /* Longest Increasing Path in a Matrix */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Longest Increasing Path in a Matrix"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1EB79F151C75AE8A002FD1A7 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		1EBA25AE1C926142003A1840 /* Find Minimum in Rotated Sorted Array */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Find Minimum in Rotated Sorted Array"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1EBA25B01C926142003A1840 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		1ED623C21C744DB8005C7F27 /* Reorder List */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Reorder List"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1ED623C41C744DB8005C7F27 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		1EE5DDB21A835B880074D282 /* Single Number */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Single Number"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -690,6 +714,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		1EB79F051C75A32B002FD1A7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1EB79F101C75AE8A002FD1A7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1EBA25AB1C926142003A1840 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1005,6 +1043,22 @@
 			path = "Longest Palindromic Substring";
 			sourceTree = "<group>";
 		};
+		1EB79F141C75AE8A002FD1A7 /* Longest Increasing Path in a Matrix */ = {
+			isa = PBXGroup;
+			children = (
+				1EB79F151C75AE8A002FD1A7 /* main.cpp */,
+			);
+			path = "Longest Increasing Path in a Matrix";
+			sourceTree = "<group>";
+		};
+		1EBA25AF1C926142003A1840 /* Find Minimum in Rotated Sorted Array */ = {
+			isa = PBXGroup;
+			children = (
+				1EBA25B01C926142003A1840 /* main.cpp */,
+			);
+			path = "Find Minimum in Rotated Sorted Array";
+			sourceTree = "<group>";
+		};
 		1ED623C31C744DB8005C7F27 /* Reorder List */ = {
 			isa = PBXGroup;
 			children = (
@@ -1063,6 +1117,8 @@
 				1ED623C31C744DB8005C7F27 /* Reorder List */,
 				1EB79EFE1C755520002FD1A7 /* Letter Combinations of a Phone Number */,
 				1EB79F091C75A32B002FD1A7 /* Longest Palindromic Substring */,
+				1EB79F141C75AE8A002FD1A7 /* Longest Increasing Path in a Matrix */,
+				1EBA25AF1C926142003A1840 /* Find Minimum in Rotated Sorted Array */,
 				1EFFB6BD1A510B9100ECDB7E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -1108,6 +1164,8 @@
 				1ED623C21C744DB8005C7F27 /* Reorder List */,
 				1EB79EFD1C755520002FD1A7 /* Letter Combinations of a Phone Number */,
 				1EB79F081C75A32B002FD1A7 /* Longest Palindromic Substring */,
+				1EB79F131C75AE8A002FD1A7 /* Longest Increasing Path in a Matrix */,
+				1EBA25AE1C926142003A1840 /* Find Minimum in Rotated Sorted Array */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1683,6 +1741,40 @@
 			productReference = 1EB79F081C75A32B002FD1A7 /* Longest Palindromic Substring */;
 			productType = "com.apple.product-type.tool";
 		};
+		1EB79F121C75AE8A002FD1A7 /* Longest Increasing Path in a Matrix */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1EB79F191C75AE8A002FD1A7 /* Build configuration list for PBXNativeTarget "Longest Increasing Path in a Matrix" */;
+			buildPhases = (
+				1EB79F0F1C75AE8A002FD1A7 /* Sources */,
+				1EB79F101C75AE8A002FD1A7 /* Frameworks */,
+				1EB79F111C75AE8A002FD1A7 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Longest Increasing Path in a Matrix";
+			productName = "Longest Increasing Path in a Matrix";
+			productReference = 1EB79F131C75AE8A002FD1A7 /* Longest Increasing Path in a Matrix */;
+			productType = "com.apple.product-type.tool";
+		};
+		1EBA25AD1C926142003A1840 /* Find Minimum in Rotated Sorted Array */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1EBA25B41C926142003A1840 /* Build configuration list for PBXNativeTarget "Find Minimum in Rotated Sorted Array" */;
+			buildPhases = (
+				1EBA25AA1C926142003A1840 /* Sources */,
+				1EBA25AB1C926142003A1840 /* Frameworks */,
+				1EBA25AC1C926142003A1840 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Find Minimum in Rotated Sorted Array";
+			productName = "Find Minimum in Rotated Sorted Array";
+			productReference = 1EBA25AE1C926142003A1840 /* Find Minimum in Rotated Sorted Array */;
+			productType = "com.apple.product-type.tool";
+		};
 		1ED623C11C744DB8005C7F27 /* Reorder List */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1ED623C81C744DB8005C7F27 /* Build configuration list for PBXNativeTarget "Reorder List" */;
@@ -1890,6 +1982,12 @@
 					1EB79F071C75A32B002FD1A7 = {
 						CreatedOnToolsVersion = 7.2;
 					};
+					1EB79F121C75AE8A002FD1A7 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					1EBA25AD1C926142003A1840 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
 					1ED623C11C744DB8005C7F27 = {
 						CreatedOnToolsVersion = 7.2;
 					};
@@ -1960,6 +2058,8 @@
 				1ED623C11C744DB8005C7F27 /* Reorder List */,
 				1EB79EFC1C755520002FD1A7 /* Letter Combinations of a Phone Number */,
 				1EB79F071C75A32B002FD1A7 /* Longest Palindromic Substring */,
+				1EB79F121C75AE8A002FD1A7 /* Longest Increasing Path in a Matrix */,
+				1EBA25AD1C926142003A1840 /* Find Minimum in Rotated Sorted Array */,
 			);
 		};
 /* End PBXProject section */
@@ -2218,6 +2318,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				1EB79F0B1C75A32B002FD1A7 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1EB79F0F1C75AE8A002FD1A7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1EB79F161C75AE8A002FD1A7 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1EBA25AA1C926142003A1840 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1EBA25B11C926142003A1840 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2905,6 +3021,48 @@
 			};
 			name = Release;
 		};
+		1EB79F171C75AE8A002FD1A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1EB79F181C75AE8A002FD1A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		1EBA25B21C926142003A1840 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1EBA25B31C926142003A1840 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		1ED623C61C744DB8005C7F27 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -3366,12 +3524,31 @@
 				1EB79F021C755520002FD1A7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1EB79F0C1C75A32B002FD1A7 /* Build configuration list for PBXNativeTarget "Longest Palindromic Substring" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1EB79F0D1C75A32B002FD1A7 /* Debug */,
 				1EB79F0E1C75A32B002FD1A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1EB79F191C75AE8A002FD1A7 /* Build configuration list for PBXNativeTarget "Longest Increasing Path in a Matrix" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1EB79F171C75AE8A002FD1A7 /* Debug */,
+				1EB79F181C75AE8A002FD1A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1EBA25B41C926142003A1840 /* Build configuration list for PBXNativeTarget "Find Minimum in Rotated Sorted Array" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1EBA25B21C926142003A1840 /* Debug */,
+				1EBA25B31C926142003A1840 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
