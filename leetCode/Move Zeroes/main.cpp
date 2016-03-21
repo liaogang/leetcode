@@ -9,6 +9,8 @@
 #include <iostream>
 #include "../leetcode.h"
 
+
+
 /**
  Given an array nums, write a function to move all 0's to the end of it while maintaining the relative order of the non-zero elements.
  
@@ -51,7 +53,7 @@ public:
 };
 
 int main(int argc, const char * argv[]) {
-
+    
 //    vector<int> b({0, 1, 0, 3, 12});
     vector<int> b({0,  0});
     Solution a;
